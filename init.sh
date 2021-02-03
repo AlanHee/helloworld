@@ -8,8 +8,8 @@ echo "Hello World!"
 scriptsPath='';
 
 ## Install tools
-apt update
-apt install -y git zsh nodejs openssl 
+yum update
+yum install -y git zsh nodejs openssl 
 
 
 ## Pull repos
