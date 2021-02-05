@@ -19,7 +19,7 @@ while true; do
 done
 
 
-# Set path 
+# export path 
 export PATH="$PATH:$HOME/$fold/src"
 
 # Set zsh
@@ -40,5 +40,5 @@ set-vim.sh
 
 # save path
 echo "export PATH=$PATH" >> ~/.zshrc
-source /data/data/com.termux/files/home/.zshrc
+source $HOME/.zshrc 
 echo "Done."
