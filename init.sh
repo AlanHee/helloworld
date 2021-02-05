@@ -1,28 +1,40 @@
-# author: 	AlanHee
-# email: 	alan.hee@outlook.com
-# home page: 	www.alanhee.site
+# Init
+#apt update 
+#apt install -y git vim zsh openssl nodejs 
 
-echo "Hello World!"
+# Set global key
+fold='';
 
-## Sets var
-scriptsPath='';
-
-## Install tools
-yum update
-yum install -y git zsh nodejs openssl 
-
-
-## Pull repos
+# Load script
 while true; do
     read -p 'Enter your funs fold name(default:functions):' funsName;
     if [ -e ~/"$funsName" ]; then
 	    echo "Fold existed!"; 
 	    echo "Enter functions fold name(default: functionss):";
     else
-	    scriptsPath=$funsName;
-	    git clone https://github.com/alanhee/helloworld ~/$scriptsPath;
+	    fold=$funsName;
+	    git clone https://github.com/alanhee/helloworld ~/$fold;
 	    break;
     fi
 done
+
+# Set zsh
+set-zsh
+
+# Set path 
+echo "export PATH='$PATH:~/$fold/src'" >> ~/.zshrc
+export PATH="$PATH:~/$fold/src"
+# Set alias
+set-alias
+
+# Set ssh
+set-ssh
+
+# Set github
+set-git
+set-git-auto-auth
+
+# Set vim
+set-vim
 
 echo "Done."
