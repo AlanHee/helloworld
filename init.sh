@@ -18,23 +18,27 @@ while true; do
     fi
 done
 
-# Set zsh
-set-zsh
 
 # Set path 
-export PATH=$PATH:$PATH/$fold/src
-echo "export PATH=$PATH:$PATH/$fold/src" >> ~/.zshrc
+export PATH="$PATH:$HOME/$fold/src"
+
+# Set zsh
+set-zsh.sh
+
 # Set alias
-set-alias
+set-alias.sh
 
 # Set ssh
-set-ssh
+set-ssh.sh
 
 # Set github
-set-git
-set-git-auto-auth
+set-git.sh
+set-git-auto-auth.sh
 
 # Set vim
-set-vim
+set-vim.sh
 
+# save path
+echo "export PATH=$PATH" >> ~/.zshrc
+source /data/data/com.termux/files/home/.zshrc
 echo "Done."
