@@ -1,1 +1,1 @@
-echo "sets zsh"
+echo "sets vim"
