@@ -22,8 +22,8 @@ done
 set-zsh
 
 # Set path 
-echo "export PATH='$PATH:~/$fold/src'" >> ~/.zshrc
-export PATH="$PATH:~/$fold/src"
+echo "export PATH=$PATH:$PATH/$fold/src" >> ~/.zshrc
+export PATH="$PATH:$PATH/$fold/src"
 # Set alias
 set-alias
 
