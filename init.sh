@@ -21,7 +21,7 @@ done
 
 # export path 
 export PATH="$PATH:$HOME/$fold/src"
-
+export SRCHOME="$HOME/$fold/src"
 # Set zsh
 set-zsh.sh
 
@@ -40,5 +40,8 @@ set-vim.sh
 
 # save path
 echo "export PATH=$PATH" >> ~/.zshrc
-source $HOME/.zshrc 
+echo "export SRCHOME=$SRCHOME" >> ~/.zshrc
+
+# Todo fixed source not found
+# source $HOME/.zshrc 
 echo "Done."
