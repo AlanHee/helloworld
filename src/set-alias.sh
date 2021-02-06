@@ -8,4 +8,5 @@ echo "alias book.vim='vim ~/cookbook/profession/vim.md'" >> ~/.zshrc
 echo "alias book.git='vim ~/cookbook/profession/git.md'" >> ~/.zshrc
 echo "alias open.zsh='vim ~/.zshrc'" >> ~/.zshrc
 echo "alias open.vim='vim ~/.vimrc'" >> ~/.zshrc
+echo "alias ga='git-all'" >> ~/.zshrc
 echo "setup alias."
