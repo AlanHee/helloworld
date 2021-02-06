@@ -13,3 +13,4 @@ then
 else
 	git config --global user.email $user_email;
 fi
+echo "setup git."
