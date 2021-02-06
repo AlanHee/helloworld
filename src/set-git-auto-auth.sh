@@ -1,1 +1,1 @@
-echo "sets git auto auth"
+git config --global credential.helper store
