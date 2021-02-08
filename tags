@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combine/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/data/data/com.termux/files/home/helloword-edit/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+<C-f>	src/.vimrc	/^nnoremap <C-f> :NERDTreeFind<CR>$/;"	m
+<C-n>	src/.vimrc	/^nnoremap <C-n> :NERDTree<CR>$/;"	m
+<C-t>	src/.vimrc	/^nnoremap <C-t> :NERDTreeToggle<CR>$/;"	m
+<leader>n	src/.vimrc	/^nnoremap <leader>n :NERDTreeFocus<CR>$/;"	m
+g:ycm_cache_omnifunc	src/.vimrc	/^let g:ycm_cache_omnifunc=0$/;"	v
+g:ycm_global_ycm_extra_conf	src/.vimrc	/^let g:ycm_global_ycm_extra_conf='~\/.vim\/bundle\/YouCompleteMe\/third_party\/ycmd\/.build.py'$/;"	v
+g:ycm_min_num_of_chars_for_completion	src/.vimrc	/^let g:ycm_min_num_of_chars_for_completion=1$/;"	v
+g:ycm_seed_identifiers_with_syntax	src/.vimrc	/^let g:ycm_seed_identifiers_with_syntax = 1$/;"	v
+helloworld	README.md	/^# helloworld/;"	c

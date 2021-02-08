@@ -1,5 +1,0 @@
-apt install vim
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-mv ~/.vimrc ~/.vimrc.old
-cp ~/helloworld/.vimrc ~/.vimrc
-vim

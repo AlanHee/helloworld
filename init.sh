@@ -30,6 +30,7 @@ set-alias.sh
 
 # Set ssh
 set-ssh.sh
+set-ssh-push-pub.sh
 
 # Set github
 set-git.sh
@@ -44,4 +45,5 @@ echo "export SRCHOME=$SRCHOME" >> ~/.zshrc
 
 # Todo fixed source not found
 # source $HOME/.zshrc 
-echo "Done."
+echo "done."
+echo "please restart termux."
