@@ -1,14 +1,14 @@
-ZSH_THEME="agnoster"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="/Users/alanhee/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,13 +70,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
- 
+plugins=(git)
 
-plugins=(git web-search extract colored-man-pages)
 source $ZSH/oh-my-zsh.sh
-
-
-
 
 # User configuration
 
@@ -103,13 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
-alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
-source /data/data/com.termux/files/home/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias m='mans'
 alias v='vim'
 alias cd.book='cd ~/cookbook'
-alias cd.src='cd /data/data/com.termux/files/home/funs/src'
+alias cd.src='cd /Users/alanhee/funs/src'
 alias cd.blog='cd ~/blog'
 alias book.cli='vim ~/cookbook/profession/cli.md'
 alias book.vim='vim ~/cookbook/profession/vim.md'
@@ -117,3 +110,5 @@ alias book.git='vim ~/cookbook/profession/git.md'
 alias open.zsh='vim ~/.zshrc'
 alias open.vim='vim ~/.vimrc'
 alias ga='git-all'
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alanhee/funs/src:/Users/alanhee/flutter/bin
+export SRCHOME=/Users/alanhee/funs/src

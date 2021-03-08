@@ -25,7 +25,8 @@ set hlsearch "高亮搜索的关键字
 set incsearch "以同时高亮所有匹配的字符
 set showmatch "括号匹配
 set history=100
-"set ignorecase "搜索忽略大小写
+syntax on	  "High light syntax
+set ignorecase "搜索忽略大小写
 "set number "设置显示行号
 "set cursorline "高亮光标所在的行
 "behave mswin
