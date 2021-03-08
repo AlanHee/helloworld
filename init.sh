@@ -23,7 +23,7 @@ done
 export PATH="$PATH:$HOME/$fold/src"
 export SRCHOME="$HOME/$fold/src"
 # Set zsh
-set-zsh.sh
+set-oh-my-zsh.sh
 
 # Set alias
 set-alias.sh
@@ -46,4 +46,4 @@ echo "export SRCHOME=$SRCHOME" >> ~/.zshrc
 # Todo fixed source not found
 # source $HOME/.zshrc 
 echo "done."
-echo "please restart termux."
+echo "please restart terminal."
