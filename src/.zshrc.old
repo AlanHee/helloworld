@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(extract git hitokoto colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +112,7 @@ alias open.vim='vim ~/.vimrc'
 alias ga='git-all'
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/alanhee/funs/src:/Users/alanhee/flutter/bin
 export SRCHOME=/Users/alanhee/funs/src
+
+# For Flutter
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn

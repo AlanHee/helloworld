@@ -23,21 +23,21 @@ done
 export PATH="$PATH:$HOME/$fold/src"
 export SRCHOME="$HOME/$fold/src"
 # Set zsh
-set-oh-my-zsh.sh
+set-oh-my-zsh
 
 # Set alias
-set-alias.sh
+set-alias
 
 # Set ssh
-set-ssh.sh
-set-ssh-push-pub.sh
+set-ssh
+set-ssh-push-pub
 
 # Set github
-set-git.sh
-set-git-auto-auth.sh
+set-git
+set-git-auto-auth
 
 # Set vim
-set-vim.sh
+set-vim
 
 # save path
 echo "export PATH=$PATH" >> ~/.zshrc
