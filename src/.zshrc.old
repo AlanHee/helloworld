@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(extract git hitokoto colored-man-pages)
+plugins=(extract git hitokoto themes colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
