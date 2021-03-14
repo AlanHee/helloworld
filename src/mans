@@ -81,9 +81,9 @@ doAction(){
     g|flutter) flutter pub get								;;
     fr)	flutter run									;;
     a|abcdiary) backup ~/Desktop/ABCDiary						;;
-    s|script) backup ~/Desktop/script							;;
-    b|blog) backup ~/Desktop/blog							;;
-    c|cookbook) backup ~/Desktop/cookbook						;;
+    s|script) backup ~/funs							;;
+    b|blog) backup ~/blog							;;
+    c|cookbook) backup ~/cookbook						;;
     e|android-emulator) flutter emulators --launch Pixel_2_API_R			;;
     u|flutter-unloack) rm ~/Documents/flutter/bin/cache/lockfile			;;
     fb) flutter packages pub run build_runner build					;;

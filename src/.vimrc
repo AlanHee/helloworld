@@ -2,7 +2,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' "plug manager
 Plugin 'scrooloose/nerdtree' "file navigater
-Plugin 'dart-lang/dart-vim-plugin' "dart language colorful
+Plugin 'dart-lang/dart-vim-plugin' "dart lang color
+let g:dart_format_on_save = 1
+" let g:dart_style_guide = 4
+" discover formatter options with dartfmt -h 
+" Enable HTML syntax highlighting inside Dart strings with let dart_html_in_string=v:true (default false).
+
 Plugin 'natebosch/vim-lsc'	"locate server
 Plugin 'natebosch/vim-lsc-dart' "dart server 
 Plugin 'neoclide/coc.nvim' "CocInstall coc-flutter
@@ -29,9 +34,11 @@ let g:lsc_auto_map = v:true
 let mapleader=" "
 
 nnoremap <leader>w :w<CR>
-
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>l :CocCommand flutter.dev.openDevLog<CR>
 " keymap NerdTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " keymap Flutter

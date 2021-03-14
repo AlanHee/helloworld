@@ -1,0 +1,8 @@
+curl -o https://cache.ruby-lang.org/pub/ruby/3.0/ruby-3.0.0.tar.gz
+x ruby-3.0.0.tar.gz
+./configure  --with-openssl-dir=/usr/local/ssl
+make
+sudo make install
+rm -rf ruby-3.0.0.tar
+rm -rf ruby-3.0.0.tar.gz
+echo "Done"
