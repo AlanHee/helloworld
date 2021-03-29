@@ -61,14 +61,10 @@ EOF
 
 backup(){
 cd $1
+/usr/bin/git gc
 /usr/bin/git add .
 /usr/bin/git commit -m "Backup taken at @ $(date)"
 /usr/bin/git push
-}
-
-backupScript(){
-cp -f ~/.bash_profile ~/Desktop/script/bash_profile.backup
-backup ~/Desktop/script
 }
 
 doAction(){
