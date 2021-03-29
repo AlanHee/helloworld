@@ -7,7 +7,6 @@ cat << EOF
  ${greenf}Mans on the way:
   ga				git add . && git commit -m $2
   fr  		  		Flutter run
-  fr6  		  		Flutter run -d "PRO 6"
   frr				flutter run --release
   fc				Flutter clean
   fcr				flutter clean && flutter run
@@ -20,7 +19,6 @@ cat << EOF
   oios				open adc ios project
   fbb				flutter packages pub run build_runner build
   e   | android-emulator	Open android emulator
-  a   | backup 			backup abcdiary project
   b   | backup 			backup blog 
   c   | backup 			backup cookbook 
   s   | backup 			backup script
@@ -80,7 +78,6 @@ doAction(){
     h|help)  showHelp									;;
     g|flutter) flutter pub get								;;
     fr)	flutter run									;;
-    a|abcdiary) backup ~/Desktop/ABCDiary						;;
     s|script) backup ~/funs							;;
     b|blog) backup ~/blog							;;
     c|cookbook) backup ~/cookbook						;;
@@ -94,7 +91,6 @@ doAction(){
     fu) flutter upgrade --force								;;
     oios) open ios/Runner.xcworkspace							;;
     frr) flutter run --release								;;
-    fr6) flutter run -d "PRO 6"								;;
     ga) git add . && git commit -m $2							;;
     fbb) flutter packages pub run build_runner build    				;;
   esac

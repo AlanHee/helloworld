@@ -34,15 +34,17 @@ let g:lsc_auto_map = v:true
 let mapleader=" "
 
 nnoremap <leader>w :w<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <leader>l :CocCommand flutter.dev.openDevLog<CR>
 " keymap NerdTree
-nnoremap <leader>n :NERDTreeToggle<CR>
+" nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " keymap Flutter
 nnoremap <C-r> :CocCommand flutter.run<CR>
+nnoremap <leader>l :CocCommand flutter.dev.openDevLog<CR>
+nnoremap <C-h> :CocCommand flutter.dev.hotRestart<CR>
+nnoremap <C-l> :CocCommand flutter.dev.hotReload<CR>
 nnoremap <leader>p :CocAction<CR>
 
 set nocompatible "关闭兼容模式，基础的设置，设置后才能使用vim许多特有的特性
