@@ -6,6 +6,10 @@ showHelp()
 cat << EOF
  ${greenf}Mans on the way:
   ga				git add . && git commit -m $2
+  gs      			git status
+  gp  		  		git push
+  ft 				flutter test
+  fte  				flutter test -r expanded
   fr  		  		Flutter run
   frr				flutter run --release
   fc				Flutter clean
@@ -17,7 +21,7 @@ cat << EOF
   fba 				flutter build apk
   fbi 				flutter build ios
   oios				open adc ios project
-  fbb				flutter packages pub run build_runner build
+  fbb				flutter packages pub run build_runner build --delete-conflicting-outputs
   e   | android-emulator	Open android emulator
   b   | backup 			backup blog 
   c   | backup 			backup cookbook 
@@ -70,25 +74,29 @@ cd $1
 doAction(){
   case $1
   in
-    quit|q) exit 0									;;
-    h|help)  showHelp									;;
-    g|flutter) flutter pub get								;;
-    fr)	flutter run									;;
-    s|script) backup ~/funs							;;
-    b|blog) backup ~/blog							;;
-    c|cookbook) backup ~/cookbook						;;
-    e|android-emulator) flutter emulators --launch Pixel_2_API_R			;;
+    gs) git status															;;
+    gp) git gc && git push													;;
+    quit|q) exit 0															;;
+    h|help)  showHelp														;;
+    g|flutter) flutter pub get												;;
+	ft) flutter test           	  											;;
+	fte) flutter test -r expanded                                           ;;
+    fr)	flutter run									       					;;
+    s|script) backup ~/funs													;;
+    b|blog) backup ~/blog													;;
+    c|cookbook) backup ~/cookbook											;;
+    e|android-emulator) flutter emulators --launch Pixel_3a_API_30_x86 		;;
     u|flutter-unloack) rm ~/Documents/flutter/bin/cache/lockfile			;;
-    fb) flutter packages pub run build_runner build					;;
-    fba) flutter build apk								;;
-    fbi) flutter build ios								;;
-    fc) flutter clean									;;
-    fcr) flutter clean && flutter run							;;
-    fu) flutter upgrade --force								;;
-    oios) open ios/Runner.xcworkspace							;;
-    frr) flutter run --release								;;
-    ga) git add . && git commit -m $2							;;
-    fbb) flutter packages pub run build_runner build    				;;
+    fb) flutter packages pub run build_runner build							;;
+    fba) flutter build apk													;;
+    fbi) flutter build ios													;;
+    fc) flutter clean														;;
+    fcr) flutter clean && flutter run										;;
+    fu) flutter upgrade --force												;;
+    oios) open ios/Runner.xcworkspace										;;
+    frr) flutter run --release												;;
+    ga) git add . && git commit -m $2										;;
+    fbb) flutter packages pub run build_runner build --delete-conflicting-outputs  		;;
   esac
   exit 0
 }
