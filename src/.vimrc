@@ -7,13 +7,10 @@ let g:dart_format_on_save = 1
 " let g:dart_style_guide = 4
 " discover formatter options with dartfmt -h 
 " Enable HTML syntax highlighting inside Dart strings with let dart_html_in_string=v:true (default false).
-
 Plugin 'natebosch/vim-lsc'	"locate server
 Plugin 'natebosch/vim-lsc-dart' "dart server 
 Plugin 'neoclide/coc.nvim' "CocInstall coc-flutter
-Plugin 'erietz/vim-terminator'
 Plugin 'KeitaNakamura/neodark.vim' "Theme
-" Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 "Apply all defaults keymaps of vim-lsc.
@@ -34,6 +31,7 @@ let g:lsc_auto_map = v:true
 let mapleader=" "
 
 nnoremap <leader>w :w<CR>
+nnoremap <leader>t :ter<CR>
 " keymap NerdTree
 " nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -44,7 +42,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-r> :CocCommand flutter.run<CR>
 nnoremap <leader>l :CocCommand flutter.dev.openDevLog<CR>
 nnoremap <C-h> :CocCommand flutter.dev.hotRestart<CR>
-nnoremap <C-l> :CocCommand flutter.dev.hotReload<CR>
+nnoremap <C-l> :CocCommand flutter.dev.clearDevLog<CR>
 nnoremap <leader>p :CocAction<CR>
 
 set nocompatible "关闭兼容模式，基础的设置，设置后才能使用vim许多特有的特性
@@ -205,8 +203,6 @@ nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
-" Search workspace symbols.
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
