@@ -1,0 +1,12 @@
+#安装npm 
+sudo apt install npm
+#设置国内npm镜像
+npm config set registry https://registry.npm.taobao.org
+#安装最新node
+sudo npm install -g n
+sudo n stable
+#这里就很良心地提示了要重启终端或者执行
+#PATH="$PATH"
+#安装nestjs
+sudo npm i -g @nestjs/cli
+print("done. please restart terminal")

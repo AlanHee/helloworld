@@ -5,6 +5,7 @@ showHelp()
 {
 cat << EOF
  ${greenf}Mans on the way:
+  ns                npm run start:dev
   ga				git add . && git commit -m $2
   gs      			git status
   gp  		  		git push
@@ -74,6 +75,7 @@ cd $1
 doAction(){
   case $1
   in
+    ns) npm run start:dev                                                   ;;
     gs) git status															;;
     gp) git gc && git push													;;
     quit|q) exit 0															;;
