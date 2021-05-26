@@ -82,7 +82,7 @@ doAction(){
     h|help)  showHelp														;;
     g|flutter) flutter pub get												;;
 	ft) flutter test           	  											;;
-	fte) flutter test -r expanded                                           ;;
+	fte) flutter test -r expanded $2                                        ;;
     fr)	flutter run									       					;;
     s|script) backup ~/funs													;;
     b|blog) backup ~/blog													;;

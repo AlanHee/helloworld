@@ -3,14 +3,14 @@
 #apt install -y git vim zsh openssl nodejs 
 
 # Set global key
-fold='';
+fold='functions';
 
 # Load script
 while true; do
-    read -p 'Enter your funs fold name(default:functions):' funsName;
+    read -p 'Enter your funs path(default:functions):' funsName;
     if [ -e ~/"$funsName" ]; then
 	    echo "Fold existed!"; 
-	    echo "Enter functions fold name(default: functionss):";
+	    echo "Enter functions path(default: functions):";
     else
 	    fold=$funsName;
 	    git clone https://github.com/alanhee/helloworld ~/$fold;
@@ -23,21 +23,21 @@ done
 export PATH="$PATH:$HOME/$fold/src"
 export SRCHOME="$HOME/$fold/src"
 # Set zsh
-set-oh-my-zsh
+zsh-with-oh-my-zsh
 
 # Set alias
 set-alias
 
 # Set ssh
-set-ssh
-set-ssh-push-pub
+ssh-gen-key
+ssh-push-pub
 
 # Set github
-set-git
-set-git-auto-auth
+git-init
+git-auto-auth
 
 # Set vim
-set-vim
+vim-init
 
 # save path
 echo "export PATH=$PATH" >> ~/.zshrc

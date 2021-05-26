@@ -1,4 +1,4 @@
-echo "alias m='mans'" >> ~/.zshrc
+echo "alias m='men'" >> ~/.zshrc
 echo "alias v='vim'" >> ~/.zshrc
 echo "alias cd.book='cd ~/cookbook'" >> ~/.zshrc
 echo "alias cd.src='cd $SRCHOME'" >> ~/.zshrc
