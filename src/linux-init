@@ -1,0 +1,5 @@
+echo "install node"
+node-init
+echo "install mysql"
+mysql-init
+
