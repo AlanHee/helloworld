@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Type in email for gen ssh key(alan.hee@outlook.com):" ssh_email
 if [ -z $ssh_email ]; 
 then

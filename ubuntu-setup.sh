@@ -1,3 +1,4 @@
+#!/bin/bash
 # Clone newest script form server
 
 # Sets default script home

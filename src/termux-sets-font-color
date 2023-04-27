@@ -1,3 +1,4 @@
+#!/bin/bash
 # go to home dir - 
 cd $HOME
 

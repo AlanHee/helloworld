@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "tell me your vpn server ip:" ip_address
 if [ -z $ip_address ]; 
 then

@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "alias m='men'" >> ~/.zshrc
 echo "alias v='nvim'" >> ~/.zshrc
 echo "alias cd.book='cd ~/cookbook'" >> ~/.zshrc

@@ -1,3 +1,4 @@
+#!/bin/bash
 # var pacakges array
 # for echo mkdir  and pull
 server=server_new

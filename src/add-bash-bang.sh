@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/bin/bash
 
 # Replace "directory_path" with the path of the directory containing the files you want to modify
 DIRECTORY="/data/data/com.termux/files/home/bin/src"

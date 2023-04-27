@@ -1,3 +1,4 @@
+#!/bin/bash
 # gen apk
 echo "Start deploy by android"
 echo "It takes time...cup of tea?"

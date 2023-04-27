@@ -1,3 +1,4 @@
+#!/bin/bash
 # more detail:
 # https://github.com/hwdsl2/setup-ipsec-vpn?mode=dark
 wget https://get.vpnsetup.net -O vpn.sh && sudo sh vpn.sh

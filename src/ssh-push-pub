@@ -1,3 +1,4 @@
+#!/bin/bash
 while true; do
 	read -p "Type in romote IP address:" ssh_ip
 	if [ -z $ssh_ip ]; 

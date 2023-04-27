@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "config git global user name(Alan Hee):" user_name
 if [ -z $user_name ]; 
 then

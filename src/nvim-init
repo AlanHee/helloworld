@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ -e ~/.config/nvim/autoload/plug.vim ];
 then
 	echo 'Oop vim-plug existed'

@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "github repos name:" repo_name
 if [ -z $repo_name ]; 
 then
