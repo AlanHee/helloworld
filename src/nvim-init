@@ -15,8 +15,7 @@ if [ -e ~/.config/nvim/init.vim ];
 then 
 	echo 'Oop nvim profile existed'
 else
-	cd $SRCHOME
-        cd ../profile
+	cd $PROFILE
   	cp -f init.vim ~/.config/nvim/      
 	echo 'Restored your nvim profile'
 fi
