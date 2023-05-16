@@ -1,4 +1,7 @@
 #!/bin/bash
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 echo "alias m='men'" >> ~/.zshrc
 echo "alias v='nvim'" >> ~/.zshrc
 echo "alias cd.book='cd ~/cookbook'" >> ~/.zshrc
