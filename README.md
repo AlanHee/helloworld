@@ -4,7 +4,7 @@
 
 '''
 
-curl -fsSL https://github.com/alanheee/helloworld/raw/main/Hello.sh | sh 
+curl -fsSL https://github.com/alanhee/helloworld/raw/main/hello.sh | sh 
 
 '''
 
