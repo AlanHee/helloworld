@@ -1,5 +1,6 @@
 #!/bin/bash
 echo 'hello termux!';
+
 scripts=(
 	termux-change-repo
 	termux-get-tools

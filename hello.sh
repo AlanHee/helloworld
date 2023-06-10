@@ -7,7 +7,7 @@ while true; do
 	    echo "fold existed!"; 
 		break;
     else
-	    git clone https://github.com/alanhee/helloworld ~/$fold;
+		git clone https://github.com/alanhee/helloworld ~/$fold;
 	    break;
     fi
 done
