@@ -5,10 +5,10 @@ then
 	mv -f ~/.config/nvim/autoload/plug.vim ~/.config/nvim/autoload/plug.vim.$(date +%Y.%m.%d-%H:%M:%S);
 else
 	git clone https://github.com/junegunn/vim-plug
-        mkdir -p ~/.config/nvim/autoload
+    mkdir -p ~/.config/nvim/autoload
 	cp -f vim-plug/plug.vim ~/.config/nvim/autoload/plug.vim
 	rm vim-plug -rf
-        echo 'Installed vim plug fun'
+    echo 'Installed vim plug fun'
 fi
 
 if [ -e ~/.config/nvim/init.vim ];
@@ -19,4 +19,3 @@ else
   	cp -f init.vim ~/.config/nvim/      
 	echo 'Restored your nvim profile'
 fi
-	

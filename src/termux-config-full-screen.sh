@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ -e ~/.termux/termux.properties ];
 then
 	mv -f ~/.termux/termux.properties ~/.termux/termux.properties.old.$(date +%Y.%m.%d-%H:%M:%S);

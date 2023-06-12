@@ -1,6 +1,8 @@
 #!/bin/bash
 echo 'hello termux!';
 
+apt update -y
+
 scripts=(
 	termux-change-repo
 	termux-get-tools
