@@ -1,5 +1,8 @@
 #!/bin/bash
-fold='bin';
+
+
+# get sciprts
+fold=bin
 while true; do
     read -p 'enter script path:' funsName;
 	fold=$funsName;
@@ -11,14 +14,31 @@ while true; do
 	    break;
     fi
 done
-# export path 
-export PATH="$PATH:$HOME/$fold/src"
-export SRCHOME="$HOME/$fold/src"
-export PROFILE="$HOME/$fold/profile"
-# save path
-echo "export PATH=$PATH" >> ~/.profile
-echo "export SRCHOME=$SRCHOME" >> ~/.profile
-echo "export PROFILE=$PROFILE" >> ~/.profile
+
+# expot vars
+export PATH=$PATH:~/$fold/src
+export SRCHOME=~/$fold/src
+export PROFILE=~/$fold/profile
+
+# save vars
+if [ ! -e ~/.bashrc ]; then 
+	touch ~/.bashrc; 
+	echo "export fold=$fold" >> ~/.bashrc
+	echo "export PATH=$PATH" >> ~/.bashrc
+	echo "export SRCHOME=$SRCHOME" >> ~/.bashrc
+	echo "export PROFILE=$PROFILE" >> ~/.bashrc
+fi
+
+# update vars
+if grep -q "export PATH=" ~/.bashrc; then
+	sed -i 's/^export PATH=.*/export PATH=$PATH:~\/$fold\/src/' ~/.bashrc
+fi
+if grep -q "export SRCHOME=" ~/.bashrc; then
+	sed -i 's/^export SRCHOME=.*/export SRCHOME=~\/$fold\/src/' ~/.bashrc
+fi
+if grep -q "export PROFILE=" ~/.bashrc; then
+	sed -i 's/^export PROFILE=.*/export PROFILE=~\/$fold\/profile/' ~/.bashrc
+fi
 
 # determine if termux or...
 if [ "$(uname -o)" = "Android" ]; then 

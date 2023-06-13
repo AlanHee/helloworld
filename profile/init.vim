@@ -5,12 +5,12 @@ Plug 'scrooloose/nerdtree' "file navigater
 Plug 'dart-lang/dart-vim-plugin' "dart lang color
 Plug 'natebosch/vim-lsc'	"locate server
 Plug 'natebosch/vim-lsc-dart' "dart server 
-"Plug 'KeitaNakamura/neodark.vim' "Theme
-Plug 'connorholyday/vim-snazzy'
+Plug 'KeitaNakamura/neodark.vim' "Theme
+"Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
 " Theme 
-colorscheme snazzy
+colorscheme neodark 
 " Basic Config
 set nocompatible "关闭兼容模式，基础的设置，设置后才能使用vim许多特有的特性
 set encoding=utf-8
