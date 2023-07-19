@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# 要添加的环境变量
-#export MY_VAR="my_value"
-
-# 在bash profile中添加环境变量
-#echo 'export MY_VAR="my_value"' >> ~/.bashrc
-
-# 使用sed命令更新bash profile
-
-#sed -i 's/^export MY_VAR=.*/export MY_VAR="my_value"/' ~/.bashrc
-
+read -p "Set up remote ip:" remote_ip 
+if [ -z $remote_ip ]; 
+then
+	echo 'remote no change yet'
+else
+	# update var weather existed 
+	if grep -q "export REMOTE_IP=" ~/.bashrc; then
+		echo 'update remote ip'
+		sed -i "s/^export REMOTE_IP=.*/export REMOTE_IP=$remote_ip/" ~/.bashrc
+	# add var weather not set yet
+	else
+		echo 'export remote ip'
+		echo "export REMOTE_IP=$remote_ip" >> ~/.bashrc
+	fi
+fi
