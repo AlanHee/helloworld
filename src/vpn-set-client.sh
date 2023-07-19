@@ -13,8 +13,9 @@ while true; do
     	scp root@$ip_address:/root/vpnclient.sswan ~ 
 		break;
 	fi
-done
 
 echo 'got vpnclient.sswan file \n'
 echo '1 download strongwang app from f-droid or goolge play \n'
 echo '2 import it -> run app with the config -> done \n'
+
+done
