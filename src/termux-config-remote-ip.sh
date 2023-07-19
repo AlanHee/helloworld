@@ -15,3 +15,9 @@ else
 		echo "export REMOTE_IP=$remote_ip" >> ~/.bashrc
 	fi
 fi
+
+#export now
+if [ -e ~/.bashrc ]; then
+	source ~/.bashrc
+	echo "export REMOTE_IP as `echo $remote_ip`"
+fi
