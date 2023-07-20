@@ -18,6 +18,10 @@ fi
 
 #export now
 if [ -e ~/.bashrc ]; then
-	source ~/.bashrc
+	if [ "$(uname -o)" = "Android" ]; then 
+		termux-reload-settings
+	else
+		source ~/.bashrc
+	fi
 	echo "export REMOTE_IP as `echo $remote_ip`"
 fi
