@@ -25,19 +25,19 @@ while true; do
 		echo "export PATH=$PATH" >> ~/.bashrc
 		echo "export SRCHOME=$SRCHOME" >> ~/.bashrc
 		echo "export PROFILE=$PROFILE" >> ~/.bashrc
-	fi
-
 	# update vars
-	if grep -q "export PATH=" ~/.bashrc; then
-		sed -i 's/^export PATH=.*/export PATH=$PATH:~\/$fold\/src/' ~/.bashrc
-	fi
+	else
+		if grep -q "export PATH=" ~/.bashrc; then
+			sed -i 's/^export PATH=.*/export PATH=$PATH:~\/$fold\/src/' ~/.bashrc
+		fi
 	
-	if grep -q "export SRCHOME=" ~/.bashrc; then
-		sed -i 's/^export SRCHOME=.*/export SRCHOME=~\/$fold\/src/' ~/.bashrc
-	fi
+		if grep -q "export SRCHOME=" ~/.bashrc; then
+			sed -i 's/^export SRCHOME=.*/export SRCHOME=~\/$fold\/src/' ~/.bashrc
+		fi
 
-	if grep -q "export PROFILE=" ~/.bashrc; then
-		sed -i 's/^export PROFILE=.*/export PROFILE=~\/$fold\/profile/' ~/.bashrc
+		if grep -q "export PROFILE=" ~/.bashrc; then
+			sed -i 's/^export PROFILE=.*/export PROFILE=~\/$fold\/profile/' ~/.bashrc
+		fi
 	fi
 
 	# determine if termux or...
