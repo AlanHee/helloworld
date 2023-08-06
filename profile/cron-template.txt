@@ -1,0 +1,5 @@
+* * * * * /usr/bin/date >> /tmp/date.txt
+0 3 * * * backup-database.sh
+0 20 * * 5 report-user.sh
+0 2 * * 2 clear-brash.sh
+
