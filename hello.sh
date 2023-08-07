@@ -13,7 +13,7 @@ while true; do
 	    break;
     fi
 
-	# expot vars
+	# export vars
 	export PATH=$PATH:~/$fold/src
 	export SRCHOME=~/$fold/src
 	export PROFILE=~/$fold/profile
