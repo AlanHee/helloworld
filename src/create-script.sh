@@ -11,8 +11,13 @@ if [ ! -z $USER_EMAIL ]; then
 fi
 cat<<EOF > $1
 #!/bin/bash
-# Create by `echo $name $email`
-# On: `date +%Y/%m/%d`
+# `echo $name $email` `date +%Y.%m.%d`
 EOF
 chmod +x $1
-vi $1
+
+if [ -e=$SRCHOME ]; then
+	mv $1 $SRCHOME
+	vi $SRCOME/$1
+else
+	vi $1
+fi
