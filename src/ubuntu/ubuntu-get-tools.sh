@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'ubuntu get tools';
+echo 'ubuntu get tools'

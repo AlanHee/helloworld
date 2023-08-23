@@ -1,11 +1,11 @@
 #!/bin/bash
 #AlanHee (alan.hee@outlook.com) 2023.08.22
 
-while true; do 
+while true; do
 	read -p 'enter your name:' userName
 	if [ ! -e=$userName ]; then
 		echo 'can not be empty name'
-		break;
+		break
 	else
 		#TODO determine user if existed then break
 		# `id` cmd show users uid gid groug
@@ -16,7 +16,7 @@ while true; do
 
 		# useradd $userName
 		# or useradd -g groupname $userName
-		break;
+		break
 	fi
 done
 
@@ -25,10 +25,10 @@ while true; do
 	read -p 'enter your password:' userPwd
 	if [ ! -e=$userPwd ]; then
 		echo "password can not be empty"
-		break;
-	else 
+		break
+	else
 		echo "password is $userPwd"
-		break;
+		break
 	fi
 done
 
@@ -40,4 +40,4 @@ done
 # groupadd group1
 # usermod -g group1 user1
 # more cmd
-# groupdel 
+# groupdel

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'hello ubuntu!';
+echo 'hello ubuntu!'
 scripts=(
 	ubuntu-get-tools
 	ubuntu-get-dart
@@ -13,7 +13,6 @@ scripts=(
 	config-ssh-keygen
 )
 
-for script in ${scripts[@]}
-do
-  bash $script.sh
+for script in ${scripts[@]}; do
+	bash $script.sh
 done

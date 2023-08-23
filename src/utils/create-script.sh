@@ -9,9 +9,9 @@ fi
 if [ ! -z $USER_EMAIL ]; then
 	email="($USER_EMAIL)"
 fi
-cat<<EOF > $1
+cat <<EOF >$1
 #!/bin/bash
-# `echo $name $email` `date +%Y.%m.%d`
+# $(echo $name $email) $(date +%Y.%m.%d)
 EOF
 chmod +x $1
 

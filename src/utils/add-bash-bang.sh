@@ -8,9 +8,9 @@ LINE="#!/bin/bash"
 
 # Loop through each file in the directory
 for file in $DIRECTORY/*; do
-  # Use sed to insert the line of text at the beginning of the file
-  # TODO 
-  #sed -i "$LINE" "$file"
-  # Print a message indicating which file was modified
-  echo "Added line to $file"
+	# Use sed to insert the line of text at the beginning of the file
+	# TODO
+	#sed -i "$LINE" "$file"
+	# Print a message indicating which file was modified
+	echo "Added line to $file"
 done

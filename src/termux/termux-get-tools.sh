@@ -6,12 +6,15 @@ while true; do
 
 	read -p 'Install ssh git nvim dart?(y/n):' response
 	case $response in
-		[Yy]* )
-			apt install -y openssh git neovim dart
-			break;;
-		[Nn]* )
-			exit;;
-		* )
-			echo 'please answer Y or N'
+	[Yy]*)
+		apt install -y openssh git neovim dart
+		break
+		;;
+	[Nn]*)
+		exit
+		;;
+	*)
+		echo 'please answer Y or N'
+		;;
 	esac
 done

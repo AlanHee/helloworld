@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'hello termux!';
+echo 'hello termux!'
 
 apt update -y
 
@@ -16,8 +16,7 @@ scripts=(
 	config-vpn-client
 )
 
-for script in ${scripts[@]}
-do
-  bash $script.sh
+for script in ${scripts[@]}; do
+	bash $script.sh
 done
 termux-reload-settings
