@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function setVar()
+function saveConst()
 {
 	if [ ! -e ~/.bashrc ]; then
 		touch ~/.bashrc
