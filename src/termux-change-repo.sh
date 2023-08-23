@@ -1,7 +1,6 @@
 #!/bin/bash
 
 while true; do
-
 	read -p 'if change termux repo?(y/n)' response
 	case $response in
 		[Yy]* )

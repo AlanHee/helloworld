@@ -1,8 +1,4 @@
 #!/bin/bash
-# by Alan Hee
-# email: alan.hee@outlook.com
-
-source functions.sh
 
 read -p "Type in your name: " user_name 
 setVar USER_NAME $user_name
