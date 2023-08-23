@@ -11,9 +11,9 @@ scripts=(
 	termux-config-storage
 	config-git
 	config-neovim
-	ssh-key-gen
-	ssh-push-pub
-	vpn-set-client
+	config-ssh-keygen
+	config-ssh-push-pub
+	config-vpn-client
 )
 
 for script in ${scripts[@]}
