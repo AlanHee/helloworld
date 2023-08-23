@@ -21,7 +21,7 @@ source ~/$fold/src/pre-load-functions.sh
 source ~/$fold/src/pre-load-utils.sh
 
 # save Const
-saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more
+saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils
 saveConst SRCHOME $fold/src
 saveConst PROFILE $fold/profile
 
