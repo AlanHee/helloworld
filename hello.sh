@@ -20,7 +20,7 @@ done
 source ~/$fold/src/pre-load-functions.sh
 source ~/$fold/src/pre-load-utils.sh
 
-# save vars
+# save Const
 saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more
 saveConst SRCHOME $fold/src
 saveConst PROFILE $fold/profile
