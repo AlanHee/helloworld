@@ -9,6 +9,7 @@ scripts=(
 	termux-config-full-screen
 	termux-config-remote-ip
 	termux-config-storage
+	config-profile-settings
 	config-git
 	config-neovim
 	config-ssh-keygen

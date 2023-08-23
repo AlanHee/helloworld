@@ -7,6 +7,7 @@ scripts=(
 	ubuntu-get-bt-panel
 	ubuntu-get-vpn-server
 	ubuntu-config-ports
+	config-profile-settings
 	config-git
 	config-neovim
 	config-ssh-keygen
