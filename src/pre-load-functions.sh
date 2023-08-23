@@ -35,3 +35,15 @@ function setSource()
 		echo "source ~/$1" >> ~/.bashrc
 	fi
 }
+
+function ga(){
+	git gc
+	git add .
+	git commit -m "$1"
+	git push
+}
+
+function mkcd(){
+	mkdir $1
+	cd $1
+}

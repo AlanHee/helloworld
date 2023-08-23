@@ -18,7 +18,7 @@ done
 
 # load functions 1st
 source ~/$fold/src/pre-load-functions.sh
-source ~/$fold/src/pre-load-utils.sh
+source ~/$fold/src/pre-load-alias.sh
 
 # save Const
 saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
@@ -27,7 +27,7 @@ saveConst PROFILE $fold/profile -p
 
 # set pre-load scripts
 setSource $SRCHOME/pre-load-functions.sh
-setSource $SRCHOME/pre-load-utils.sh
+setSource $SRCHOME/pre-load-alias.sh
 
 # determine env
 if [ "$(uname -o)" = "Android" ]; then 
