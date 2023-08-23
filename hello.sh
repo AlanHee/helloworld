@@ -21,9 +21,9 @@ source ~/$fold/src/pre-load-functions.sh
 source ~/$fold/src/pre-load-utils.sh
 
 # save vars
-setVar PATH  $PATH:~/$fold/src:~/$fold/src/more
-setVar SRCHOME $fold/src
-setVar PROFILE $fold/profile
+saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more
+saveConst SRCHOME $fold/src
+saveConst PROFILE $fold/profile
 
 # set pre-load scripts
 setSource $SRCHOME/pre-load-functions.sh
