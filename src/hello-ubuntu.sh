@@ -2,11 +2,10 @@
 echo 'hello ubuntu!';
 scripts=(
 	ubuntu-get-tools
-	neovim-config-plugs
+	config-git
+	config-neovim
 	ubuntu-get-dart
 	ubuntu-get-dart-frog
-	git-global-config
-	git-auto-auth
 	ssh-key-gen
 	ubuntu-get-bt-panel
 	ubuntu-get-vpn-server

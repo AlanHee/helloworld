@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# config user name
 read -p "config git global user name(Alan Hee):" user_name
 if [ -z $user_name ]; 
 then
@@ -7,6 +9,7 @@ else
 	git config --global user.name $user_name;
 fi
 
+# config user password
 read -p "config git global user email(alan.hee@outlook.com):" user_email
 if [ -z $user_email ];
 then
@@ -14,4 +17,6 @@ then
 else
 	git config --global user.email $user_email;
 fi
-echo "setup git."
+
+# config auto auth
+git config --global credential.helper store

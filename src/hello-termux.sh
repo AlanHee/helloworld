@@ -9,9 +9,8 @@ scripts=(
 	termux-config-full-screen
 	termux-config-remote-ip
 	termux-config-storage
-	neovim-config-plugs
-	git-global-config
-	git-auto-auth
+	config-git
+	config-neovim
 	ssh-key-gen
 	ssh-push-pub
 	vpn-set-client
