@@ -3,7 +3,7 @@
 # load sciprts
 fold=bin
 while true; do
-    read -p 'enter script fold:' funsName;
+    read -p 'set scripts store in:' funsName;
     if [ -e ~/$funsName ]; then
 	    echo "fold existed!"; 
 		break;
@@ -16,8 +16,9 @@ while true; do
     fi
 done
 
-# expord funs
-source ~/$fold/functions.sh
+# set pre-load scripts
+setSource ~/$fold/pre-load-functions.sh
+setSource ~/$fold/pre-load-utils.sh
 	
 # save vars
 setVar PATH  $PATH:~/$fold/src

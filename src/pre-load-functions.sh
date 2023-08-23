@@ -22,6 +22,7 @@ function setVar()
 
 function setSource()
 {
+	source $1
 	if grep -q "$1" ~/.bashrc; then
 		echo "$1" >> ~/.bashrc
 	fi

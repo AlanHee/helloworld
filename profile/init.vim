@@ -15,8 +15,8 @@ colorscheme neodark
 set nocompatible "关闭兼容模式，基础的设置，设置后才能使用vim许多特有的特性
 set encoding=utf-8
 set cindent "设置自动缩进，根据的是c
-set tabstop=4 "设置tab宽度是4
-set shiftwidth=4 "用于程序中自动缩进所使用的空白长度指示的
+set tabstop=2 "设置tab宽度是4
+set shiftwidth=2 "用于程序中自动缩进所使用的空白长度指示的
 set hlsearch "高亮搜索的关键字
 set incsearch "以同时高亮所有匹配的字符
 set showmatch "括号匹配
