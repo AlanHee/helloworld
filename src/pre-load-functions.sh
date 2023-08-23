@@ -1,6 +1,4 @@
 #!/bin/bash
-# Create by AlanHee (alan.hee@outlook.com)
-# On: 2023/08/07
 
 function setVar()
 {
@@ -22,7 +20,9 @@ function setVar()
 
 function setSource()
 {
-	source $1
+	if [ ! -e ~/.bashrc ]; then
+		touch ~/.bashrc
+	fi
 	if grep -q "$1" ~/.bashrc; then
 		echo "$1" >> ~/.bashrc
 	fi
