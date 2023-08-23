@@ -1,6 +1,7 @@
 #!/bin/bash
 
-alias ls='ls -tlh | less'
+alias lss='ls -tlh | less'
+alias gs='git status'
 
 function ga(){
 	git gc
@@ -8,8 +9,3 @@ function ga(){
 	git commit -m "$1"
 	git push
 }
-
-function gs(){
-	git status
-}
-

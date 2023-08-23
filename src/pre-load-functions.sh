@@ -19,3 +19,10 @@ function setVar()
 	# export now
 	export $1=$2
 }
+
+function setSource()
+{
+	if grep -q "$1" ~/.bashrc; then
+		echo "$1" >> ~/.bashrc
+	fi
+}
