@@ -23,7 +23,7 @@ function setSource()
 	if [ ! -e ~/.bashrc ]; then
 		touch ~/.bashrc
 	fi
-	if grep -q "$1" ~/.bashrc; then
-		echo "$1" >> ~/.bashrc
+	if ! grep -q '$1' ~/.bashrc; then
+		echo "source $1" >> ~/.bashrc
 	fi
 }
