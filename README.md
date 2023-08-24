@@ -3,9 +3,9 @@
 A bash script for quickly to config termux or linux.
 
 
-- Beatty. ever each file's code size less 25 line
-- Usefully.
-- Easily.
+- Beatty: ever each file's code size less 25 line.
+- Usefully: More then 50 script shell.
+- Easily: Just run in `show-menu.sh` or just `sm` 
 
 
 ### Install 
