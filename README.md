@@ -1,6 +1,6 @@
 # helloworld
 
-A bash script for quickly to config termux or linux
+A bash script for quickly to config termux or linux.
 
 
 - Beatty. ever each file's code size less 25 line
