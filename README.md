@@ -1,6 +1,6 @@
 # helloworld
 
-A bash script for quickly to config termux or linux.
+A shell script for quickly to config termux or linux.
 
 
 
