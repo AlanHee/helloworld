@@ -7,3 +7,12 @@ A bash script for configs termux or linux.
 ```
 curl -fsSL https://github.com/alanhee/helloworld/raw/main/hello.sh | bash 
 ```
+
+### What can do? 
+
+```
+show-menu.sh 
+# or just type in sm
+sm
+```
+
