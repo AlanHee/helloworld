@@ -14,14 +14,5 @@ A bash script for quickly to config termux or linux.
 curl -fsSL https://github.com/alanhee/helloworld/raw/main/hello.sh | bash 
 ```
 
-### How? 
-```
-#just run
-show-menu.sh 
-
-#or just run
-sm
-```
-
 Have fun！
 
