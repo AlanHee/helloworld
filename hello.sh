@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # load sciprts
-fold="test"
+fold=""
 while true; do
 
 	read -p 'set scripts store in:' funsName;
@@ -14,6 +14,7 @@ while true; do
 
     if [ -e ~/$fold ]; then
 	    echo "fold existed!"; 
+			#TODO 
 			break;
     else 
 			git clone https://github.com/alanhee/helloworld ~/$fold;
