@@ -1,20 +1,24 @@
 #!/bin/bash
 
 # load sciprts
-fold=bin
+fold="test"
 while true; do
-    read -p 'set scripts store in:' funsName;
-    if [ -e ~/$funsName ]; then
+
+	read -p 'set scripts store in:' funsName;
+	
+		if [ -z $funsName ]; then 
+			fold="bin"
+		else 
+			fold="$funsName"
+		fi
+
+    if [ -e ~/$fold ]; then
 	    echo "fold existed!"; 
 			break;
     else 
-			if [ ! -z $funsName ]; then
-				fold=$funsName;
-			fi
 			git clone https://github.com/alanhee/helloworld ~/$fold;
 	  	break;
     fi
-done
 
 # load functions 1st
 source ~/$fold/src/pre-load-functions.sh
@@ -35,3 +39,4 @@ if [ "$(uname -o)" = "Android" ]; then
 else
 	bash hello-ubuntu.sh
 fi
+done
