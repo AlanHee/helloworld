@@ -17,7 +17,6 @@ while true; do
 			break;
     else 
 			git clone https://github.com/alanhee/helloworld ~/$fold;
-	  	break;
     fi
 
 # load functions 1st
