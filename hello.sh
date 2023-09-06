@@ -13,16 +13,15 @@ while true; do
 		fi
 
     if [ -e ~/$fold ]; then
-	    echo "fold existed!"; 
 			#TODO 
+	    echo "fold existed!"; 
 			break;
-    else 
-			git clone https://github.com/alanhee/helloworld ~/$fold;
-    fi
+		fi
+		git clone https://github.com/alanhee/helloworld ~/$fold;
 
 # load functions 1st
-source ~/$fold/src/pre-load-functions.sh
-source ~/$fold/src/pre-load-alias.sh
+bash ~/$fold/src/pre-load-functions.sh
+bash ~/$fold/src/pre-load-alias.sh
 
 # save Const
 saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
