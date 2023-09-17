@@ -17,7 +17,7 @@ chmod +x $1
 
 if [ -e=$SRCHOME ]; then
 	mv $1 $SRCHOME
-	vi $SRCOME/$1
+	vi $SRCHOME/$1
 else
 	vi $1
 fi
