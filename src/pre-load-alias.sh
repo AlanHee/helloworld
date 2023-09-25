@@ -1,5 +1,5 @@
 #!/bin/bash
-
+alias vi='nvim'
 alias lss='ls -tlh | less'
 alias gs='git status'
 alias sm='show-menu.sh'
