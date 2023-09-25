@@ -27,4 +27,4 @@ fi
 
 echo 'Restored your nvim profile'
 # update plugs
-vim +PlugClean[!] +PlugUpdate +qa
+nvim +PlugClean[!] +PlugUpdate +qa
