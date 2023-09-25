@@ -45,3 +45,23 @@ function mkcd() {
 	mkdir $1
 	cd $1
 }
+
+function yesOrNo() {
+
+	while true; do
+
+		read -p "$1" response
+		case $response in
+		[Yy]*)
+			bash $2
+			break
+			;;
+		[Nn]*)
+			break
+			;;
+		*)
+			echo 'please answer Y or N'
+			;;
+		esac
+	done
+}
