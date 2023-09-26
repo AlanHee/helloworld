@@ -16,6 +16,7 @@ while true; do
 
 		git clone git@github.com:alanhee/helloworld.git ~/$fold;
 
+done
 #export funs
 source ~/$fold/src/pre-load-functions.sh
 source ~/$fold/src/pre-load-alias.sh
@@ -39,4 +40,3 @@ if [ "$(uname -o)" = "Android" ]; then
 else
 	bash hello-ubuntu.sh
 fi
-done
