@@ -29,6 +29,10 @@ saveConst PROFILE $fold/profile -p
 setSource $SRCHOME/pre-load-functions.sh
 setSource $SRCHOME/pre-load-alias.sh
 
+# run funs and alias
+bash ~/$fold/src/pre-load-functions.sh
+bash ~/$fold/src/pre-load-alias.sh
+
 # determine env
 if [ "$(uname -o)" = "Android" ]; then 
 	bash hello-termux.sh
