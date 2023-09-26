@@ -1,25 +1,22 @@
 #!/bin/bash
 
-# load sciprts
-fold=""
+# get sciprts 
+fold="bin"
 while true; do
-
-	read -p 'set scripts store in:' funsName;
+	read -p 'set scripts in:' funsName;
 	
-		if [ -z $funsName ]; then 
-			fold="bin"
-		else 
-			fold="$funsName"
+		if [ ! -z $funsName ]; then 
+			$fold="$funsName"
 		fi
 
     if [ -e ~/$fold ]; then
-			#TODO 
 	    echo "fold existed!"; 
 			break;
 		fi
-		git clone https://github.com/alanhee/helloworld ~/$fold;
 
-# load functions 1st
+		git clone git@github.com:alanhee/helloworld.git ~/$fold;
+
+# load funs
 bash ~/$fold/src/pre-load-functions.sh
 bash ~/$fold/src/pre-load-alias.sh
 
