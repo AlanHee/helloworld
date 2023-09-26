@@ -16,9 +16,9 @@ while true; do
 
 		git clone git@github.com:alanhee/helloworld.git ~/$fold;
 
-# load funs
-bash ~/$fold/src/pre-load-functions.sh
-bash ~/$fold/src/pre-load-alias.sh
+#export funs
+source ~/$fold/src/pre-load-functions.sh
+source ~/$fold/src/pre-load-alias.sh
 
 # save Const
 saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
