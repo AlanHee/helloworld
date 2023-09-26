@@ -3,7 +3,7 @@
 # get sciprts 
 fold="bin"
 while true; do
-	read -p 'set scripts in:' funsName;
+	read -p 'set scripts home path(default: bin): ' funsName;
 	
 		if [ ! -z $funsName ]; then 
 			$fold="$funsName"

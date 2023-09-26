@@ -65,3 +65,5 @@ function yesOrNo() {
 		esac
 	done
 }
+
+echo "loading funs"
