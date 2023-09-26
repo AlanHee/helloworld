@@ -15,6 +15,7 @@ while true; do
 		fi
 
 		git clone git@github.com:alanhee/helloworld.git ~/$fold;
+		break;
 
 done
 #export funs
