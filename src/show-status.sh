@@ -10,5 +10,5 @@ for file in $( find "$folder" -type f ); do
     total_lines=$((total_lines + lines))
 done;
 
-echo "Total shell file count：$file_count"
-echo "Total shell code count：$total_lines"
+echo "Total file count：$file_count"
+echo "Total line count：$total_lines"
