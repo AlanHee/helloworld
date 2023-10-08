@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'hello termux!'
+echo 'Hello termux!'
 
 apt update -y
 
@@ -19,4 +19,5 @@ scripts=(
 for script in ${scripts[@]}; do
 	bash $script.sh
 done
+echo "Done."
 termux-reload-settings
