@@ -13,4 +13,7 @@ if [ "$(uname -o)" = "Android" ]; then
 	saveConst REMOTE_IP $remote_ip
 fi
 
+export $USER_NAME
+export $USER_EMAIL
+
 source ~/.bashrc

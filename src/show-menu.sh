@@ -7,6 +7,6 @@ if [ "$(uname -o)" = "Android" ]; then
 		cmd[${#cmd[*]}]=$(basename $i)
 	done
 fi
-		for item in ${cmd[*]}; do
+for item in ${cmd[*]}; do
 	echo $item
 done

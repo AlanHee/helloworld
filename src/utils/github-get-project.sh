@@ -6,10 +6,10 @@ else
 	while true; do
 		read -p 'github project:' github_project
 		if [ -z $github_project ]; then
-			echo 'project path can not be empty';
+			echo 'project path can not be empty'
 		else
 			git clone git@github.com:$github_project.git
-			break;
+			break
 		fi
 	done
 fi

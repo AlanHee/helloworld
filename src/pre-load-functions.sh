@@ -53,7 +53,7 @@ function yesOrNo() {
 		read -p "$1" response
 		case $response in
 		[Yy]*)
-			bash $2
+			$2
 			break
 			;;
 		[Nn]*)

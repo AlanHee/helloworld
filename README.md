@@ -3,8 +3,6 @@
 A shell script for quickly to config termux or linux.
 
 
-
-
 ### Why 
 
 - Beatty: ever each file's code size less 25 line.
@@ -19,6 +17,4 @@ curl -fsSL https://github.com/alanhee/helloworld/raw/main/hello.sh | bash
 ```
 
 Have fun！
-
-
 

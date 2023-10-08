@@ -4,7 +4,7 @@ if [[ ! -z $USER_NAME && ! -z $USER_EMAIL ]]; then
 	git config --global user.name $USER_NAME
 	git config --global user.email $USER_EMAIL
 	echo 'git auto setup'
-else 
+else
 	# config user name
 	read -p "config git global user name(Alan Hee):" user_name
 	if [ -z $user_name ]; then
