@@ -1,4 +1,5 @@
 #!/bin/bash
+#ls -Rm $SRCHOME | less
 
 cmd=()
 # determine env
