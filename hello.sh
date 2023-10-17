@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# update 1st.
+apt upgrade -y
+apt install git -y
+
 # get sciprts 
 fold="bin"
 while true; do
@@ -21,6 +25,9 @@ done
 #export funs
 bash ~/$fold/src/pre-load-functions.sh
 bash ~/$fold/src/pre-load-alias.sh
+source ~/$fold/src/pre-load-functions.sh
+source ~/$fold/src/pre-load-alias.sh
+
 
 # save Const
 saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
