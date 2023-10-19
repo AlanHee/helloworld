@@ -38,8 +38,6 @@ source ~/$fold/src/pre-load-alias.sh
 
 # save Cons
 # Fixed ~/ issue
-saveConst PATH  $PATH
-saveConst PATH  ~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
 saveConst SRCHOME $fold/src -p
 saveConst PROFILE $fold/profile -p
 

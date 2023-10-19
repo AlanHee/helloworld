@@ -1,25 +1,18 @@
 #!/bin/bash
 
+# set path
+
+
 function saveConst() {
 	if [ ! -e ~/.bashrc ]; then
 		touch ~/.bashrc
 	fi
 	# update var
 	if grep -q "export $1=" ~/.bashrc; then
-		# fixed ~/ if is $PATH
-		if [ -z $3 ]; then
-			sed -i "s/^export $1=.*/export $1=$2/" ~/.bashrc
-		else
-			sed -i "s/^export $1=.*/export $1=~/$2/" ~/.bashrc
-		fi
+		sed -i "s/^export $1=.*/export $1=$2/" ~/.bashrc
 	# add var
 	else
-		# fixed ~/ if is $PATH
-		if [ -z $3 ]; then
-			echo "export $1=$2" >>~/.bashrc
-		else
-			echo "export $1=~/$2" >>~/.bashrc
-		fi
+		echo "export $1=$2" >>~/.bashrc
 	fi
 	# export now
 	export $1=$2
