@@ -1,9 +1,14 @@
 #!/bin/bash
 
 # update 1st.
-apt upgrade -y
-apt install git -y
-
+# determine env
+if [ "$(uname -o)" = "Android" ]; then 
+	pkg upgrade -y
+	pkg install git -y
+else
+	apt upgrade -y
+	apt install git -y
+fi
 # get sciprts 
 fold="bin"
 while true; do
@@ -18,7 +23,9 @@ while true; do
 			break;
 		fi
 
-		git clone git@github.com:alanhee/helloworld.git ~/$fold;
+		git clone https://github.com/alanhee/helloworld ~/$fold;
+		echo "get scripts up" 
+
 		break;
 
 done
@@ -29,18 +36,16 @@ source ~/$fold/src/pre-load-functions.sh
 source ~/$fold/src/pre-load-alias.sh
 
 
-# save Const
-saveConst PATH  $PATH:~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
+# save Cons
+# Fixed ~/ issue
+saveConst PATH  $PATH
+saveConst PATH  ~/$fold/src:~/$fold/src/more:~/$fold/src/termux:~/$fold/src/ubuntu:~/$fold/src/mac:~/$fold/src/utils -p
 saveConst SRCHOME $fold/src -p
 saveConst PROFILE $fold/profile -p
 
 # set pre-load scripts
 setSource $SRCHOME/pre-load-functions.sh
 setSource $SRCHOME/pre-load-alias.sh
-
-# run funs and alias
-bash ~/$fold/src/pre-load-functions.sh
-bash ~/$fold/src/pre-load-alias.sh
 
 # determine env
 if [ "$(uname -o)" = "Android" ]; then 
