@@ -38,8 +38,8 @@ source ~/$fold/src/pre-load-alias.sh
 
 # save Cons
 # Fixed ~/ issue
-saveConst SRCHOME $fold/src -p
-saveConst PROFILE $fold/profile -p
+saveConst SRCHOME /$fold/src -p
+saveConst PROFILE /$fold/profile -p
 
 # set pre-load scripts
 setSource $SRCHOME/pre-load-functions.sh
