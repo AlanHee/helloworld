@@ -9,7 +9,8 @@ if [ -e ~/$home ]; then
 	exit 0
 fi
 git clone https://github.com/alanhee/helloworld ~/$home;
-		
+
+bash ~/$home/src/init.sh $home		
 if [ "$(uname -o)" = "Android" ]; then 
 	bash ~/$home/src/hello-termux.sh
 else

@@ -1,8 +1,4 @@
 #!/bin/bash
-
-# set path
-
-
 function saveConst() {
 	if [ ! -e ~/.bashrc ]; then
 		touch ~/.bashrc
@@ -23,7 +19,7 @@ function setSource() {
 		touch ~/.bashrc
 	fi
 	if ! grep -q "~/$1" ~/.bashrc; then
-		echo "source ~/$1" >>~/.bashrc
+		echo ". ~/$1" >>~/.bashrc
 	fi
 }
 
@@ -34,15 +30,8 @@ function ga() {
 	git push
 }
 
-function mkcd() {
-	mkdir $1
-	cd $1
-}
-
 function yesOrNo() {
-
 	while true; do
-
 		read -p "$1" response
 		case $response in
 		[Yy]*)
@@ -58,5 +47,3 @@ function yesOrNo() {
 		esac
 	done
 }
-
-echo "loading funs"

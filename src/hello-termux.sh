@@ -1,7 +1,4 @@
 #!/bin/bash
-echo 'Hello termux!'
-
-apt update -y
 
 scripts=(
 	termux-change-repo
@@ -19,5 +16,5 @@ scripts=(
 for script in ${scripts[@]}; do
 	bash $script.sh
 done
-echo "Done."
+
 termux-reload-settings

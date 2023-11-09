@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'hello ubuntu!'
+
 scripts=(
 	ubuntu-get-tools
 	config-profile-settings
