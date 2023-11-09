@@ -1,4 +1,5 @@
 #!/bin/bash
+. $SRCHOME/pre-load-functions.sh
 
 function getPlugManager() {
 	git clone https://github.com/junegunn/vim-plug
@@ -10,7 +11,6 @@ function getPlugManager() {
 if [ ~/.config/nvim/autoload/plug.vim ]; then
 	yesOrNo "Override existed vim-plug?(y/n)  :" getPlugManager
 fi
-
 
 function getPlugs() {
 	cd $PROFILE
