@@ -1,3 +1,3 @@
 #!/bin/bash
-source $SRCHOME/pre-load-functions.sh
+source funs.sh
 yesOrNo "Setup stroage(y/n)" "termux-setup-storage"

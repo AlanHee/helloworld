@@ -15,9 +15,9 @@ cat <<EOF >$1
 EOF
 chmod +x $1
 
-if [ -e=$SRCHOME ]; then
-	mv $1 $SRCHOME
-	vi $SRCHOME/$1
+if [ -e=$SRC/src ]; then
+	mv $1 $SRC/src
+	vi $SRC/src/$1
 else
 	vi $1
 fi

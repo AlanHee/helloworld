@@ -1,5 +1,5 @@
 #!/bin/bash
-. $SRCHOME/pre-load-functions.sh
+source funs.sh
 
 function getPlugManager() {
 	git clone https://github.com/junegunn/vim-plug
@@ -13,7 +13,7 @@ if [ ~/.config/nvim/autoload/plug.vim ]; then
 fi
 
 function getPlugs() {
-	cd $PROFILE
+	cd $SRC/profile
 	cp -f init.vim ~/.config/nvim/
 	nvim +PlugClean[!] +PlugUpdate +qa
 }

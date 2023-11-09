@@ -1,5 +1,5 @@
 #!/bin/bash
-source $SRCHOME/pre-load-functions.sh
+source funs.sh
 
 function _() {
 

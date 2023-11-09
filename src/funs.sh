@@ -1,4 +1,3 @@
-#!/bin/bash
 function saveConst() {
 	if [ ! -e ~/.bashrc ]; then
 		touch ~/.bashrc
@@ -47,3 +46,4 @@ function yesOrNo() {
 		esac
 	done
 }
+echo 'run funs'

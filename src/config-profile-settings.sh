@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source pre-load-functions.sh
+source funs.sh
 
 if [ ! $USER_NAME ] || [ ! $USER_EMAIL ]; then
 	read -p "Type in your name: " user_name

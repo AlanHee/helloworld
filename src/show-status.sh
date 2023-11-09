@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folder="$SRCHOME"
+folder="$SRC/src"
 
 file_count=$(find "$folder" -type f | wc -l)
 

@@ -14,7 +14,7 @@ scripts=(
 )
 
 for script in ${scripts[@]}; do
-	bash $script.sh
+	$script.sh
 done
 
 termux-reload-settings

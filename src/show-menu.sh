@@ -4,7 +4,7 @@
 cmd=()
 # determine env
 if [ "$(uname -o)" = "Android" ]; then
-	for i in $(ls $SRCHOME/*); do
+	for i in $(ls $SRC/src/*); do
 		cmd[${#cmd[*]}]=$(basename $i)
 	done
 fi
