@@ -1,25 +1,13 @@
 function saveConst() {
-	if [ ! -e ~/.bashrc ]; then
-		touch ~/.bashrc
-	fi
-	# update var
-	if grep -q "export $1=" ~/.bashrc; then
-		sed -i "s/^export $1=.*/export $1=$2/" ~/.bashrc
-	# add var
+	# Update const
+	if grep -q "export $1=" $SRC/config.sh; then
+		sed -i "s/^export $1=.*/export $1=$2/" $SRC/config.sh
+	# Add const
 	else
-		echo "export $1=$2" >>~/.bashrc
+		echo "export $1=$2" >>$SRC/config.sh
 	fi
-	# export now
+	# Export const now
 	export $1=$2
-}
-
-function setSource() {
-	if [ ! -e ~/.bashrc ]; then
-		touch ~/.bashrc
-	fi
-	if ! grep -q "~/$1" ~/.bashrc; then
-		echo ". ~/$1" >>~/.bashrc
-	fi
 }
 
 function ga() {
