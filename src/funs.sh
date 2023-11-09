@@ -1,4 +1,8 @@
 function saveConst() {
+	# Create config file weather no exist yet
+	if [ ! -e $SRC/config.sh ]; then
+		touch $SRC/config.sh
+	fi
 	# Update const
 	if grep -q "export $1=" $SRC/config.sh; then
 		sed -i "s/^export $1=.*/export $1=$2/" $SRC/config.sh
