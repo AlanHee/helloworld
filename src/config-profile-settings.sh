@@ -16,9 +16,6 @@ if [ ! -z $user_email ]; then
 	userEmail="$user_email"
 fi
 
-echo $userName
-echo $userEmail
-
 # save remove ip weather with local env
 if [ "$(uname -o)" = "Android" ]; then
 	read -p "Set up remote ip($REMOTE_IP):" remote_ip
@@ -27,11 +24,6 @@ if [ "$(uname -o)" = "Android" ]; then
 	fi
 fi
 
-echo $remoteIP
-
-saveConst USER_NAME $userName
-saveConst USER_EMAIL $userEmail
-saveConst REMOTE_IP $remoteIP
-export USER_NAME=$userName
-export USER_EMAIL=$userEmail
-export REMOTE_IP=$remoteIP
+saveExport USER_NAME $userName
+saveExport USER_EMAIL $userEmail
+saveExport REMOTE_IP $remoteIP

@@ -1,9 +1,15 @@
 #!/bin/bash
-read -p "Type in email for gen ssh key(alan.hee@outlook.com):" ssh_email
-if [ -z $ssh_email ]; then
-	ssh-keygen -t rsa -C "alan.hee@outlook.com"
-else
-	ssh-keygen -t rsa -C "$ssh_email"
+source ~/.bashrc
+sshEmail="alan.hee@outlook.com"
+
+if [ ! -z $USER_EMAIL ]; then
+	sshEmail=$USER_EMAIL
 fi
 
-echo "setup ssh."
+read -p "Generate ssh keys with email (default $sshEmail): " ssh_email
+if [ ! -z $ssh_email ]; then
+	sshEmail=$ssh_email
+fi
+
+ssh-keygen -t rsa -C "$sshEmail"
+echo "SSH keys generated."
