@@ -11,7 +11,7 @@ if [ ! -z $USER_EMAIL ]; then
 	userEmail=$USER_EMAIL
 fi
 
-read -p "Type in your name: (default: $useName)" user_name
+read -p "Type in your name: (default: $userName)" user_name
 if [ ! -z $user_name ]; then
 	userName="$user_name"
 fi
@@ -23,3 +23,6 @@ fi
 
 saveExport USER_NAME $userName
 saveExport USER_EMAIL $userEmail
+
+echo "User name( $userName ) setup"
+echo "User email( $userEmail ) setup"
