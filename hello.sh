@@ -4,6 +4,9 @@ apt upgrade -qyy
 apt install git -qyy
 
 read -p 'Type in a path to save hello script:' home;
+if [ -z ~/$home ]; then
+	home="bin"
+fi
 if [ -e ~/$home ]; then
 	echo "Oop path existed."; 
 	exit 0
