@@ -3,15 +3,14 @@ function saveExport() {
 	if [ ! -e $SRC/config.sh ]; then
 		touch $SRC/config.sh
 	fi
-	# Update const
+	# Update export
 	if grep -q "export $1=" $SRC/config.sh; then
-		sed -i "s/^export $1=.*/export $1=$2/" $SRC/config.sh
-	# Add const
+		# Fixed error: ...unknown option to `s’
+		sed -i "s|^export $1=.*|export $1=$2|g" $SRC/config.sh
+	# Add export
 	else
 		echo "export $1=$2" >>$SRC/config.sh
 	fi
-	# Export const now
-	export $1=$2
 }
 
 function saveConst() {
@@ -26,6 +25,21 @@ function saveConst() {
 	else
 		echo "$1=$2" >>$SRC/config.sh
 	fi
+}
+function saveSource() {
+	# Create config file weather no exist yet
+	if [ ! -e $SRC/config.sh ]; then
+		touch $SRC/config.sh
+	fi
+	# Update 
+	if grep -q "source $1" $SRC/config.sh; then
+		sed -i "s/^source $1.*/source $1/" $SRC/config.sh
+	# Add 
+	else
+		echo "source $1" >>$SRC/config.sh
+	fi
+	# source now
+	source $1
 }
 
 function ga() {
@@ -52,4 +66,4 @@ function yesOrNo() {
 		esac
 	done
 }
-echo 'run funs'
+echo 'loaded funs'

@@ -6,6 +6,8 @@ export SRC=~/$1
 source funs.sh
 saveExport PATH $PATH
 saveExport SRC ~/$1
+saveSource alias.sh
+saveSource funs.sh
 
 echo ". ~/$1/config.sh" > ~/.bashrc
 if [ "$(uname -o)" = "Android" ]; then 
