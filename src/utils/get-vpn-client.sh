@@ -11,7 +11,7 @@ function _() {
 
 	while true; do
 		read -p "type in vpn server ip(default $remoteIP): " remote_ip
-			if [ ! -z $REMOTE_IP ]; then
+			if [ ! -z $remote_ip ]; then
 				remoteIP=$remote_ip
 				break;
 			fi
@@ -21,6 +21,7 @@ function _() {
 			echo 'ip can not be empty'
 	done
 
+	echo $remoteIP
 	scp root@$remoteIP:/root/vpnclient.sswan ~
 	echo 'Got vpn client.'
 }
