@@ -1,6 +1,23 @@
 #!/bin/bash
-
 scripts=(
+	config-profile-settings
+	ubuntu-get-vpn-server
+	)
+scripts2=(
+	config-profile-settings
+	config-ssh-keygen
+	config-git
+	config-neovim
+	ubuntu-get-vpn-server
+	ubuntu-get-dart
+	ubuntu-get-dart-frog
+	ubuntu-get-flutter
+	ubuntu-get-docker
+	ubuntu-get-nosql-database
+)
+
+scripts1=(
+	ubuntu-get-vpn-server
 	ubuntu-get-tools
 	config-profile-settings
 	config-git
@@ -9,7 +26,6 @@ scripts=(
 	ubuntu-get-dart
 	ubuntu-get-dart-frog
 	ubuntu-get-bt-panel
-	ubuntu-get-vpn-server
 )
 
 for script in ${scripts[@]}; do
