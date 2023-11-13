@@ -66,4 +66,7 @@ function yesOrNo() {
 		esac
 	done
 }
-echo 'loaded funs'
+#fixed scp error should no echo nothing  
+#scp: Received message too long 1819238756
+#scp: Ensure the remote shell produces no output for non-interactive sessions.
+#echo 'loaded funs'
