@@ -6,6 +6,7 @@ Plug 'dart-lang/dart-vim-plugin' "dart lang color
 Plug 'natebosch/vim-lsc'	"locate server
 Plug 'natebosch/vim-lsc-dart' "dart server 
 Plug 'KeitaNakamura/neodark.vim' "Theme
+Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 "Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
@@ -44,3 +45,7 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" Plug vim-shmft config 
+" auto save while save
+let g:shfmt_fmt_on_save = 1
