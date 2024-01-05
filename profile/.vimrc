@@ -7,8 +7,8 @@ Plug 'natebosch/vim-lsc'	"locate server
 Plug 'natebosch/vim-lsc-dart' "dart server 
 Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
-Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
+"Plug 'tpope/vim-commentary'
+"Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Theme 
