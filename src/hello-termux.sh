@@ -11,6 +11,8 @@ scripts=(
 	config-ssh-keygen
 	config-ssh-push-pub
 	get-vpn-client
+	flutter-swith-host
+	termux-install-ubuntu
 )
 
 for script in ${scripts[@]}; do
