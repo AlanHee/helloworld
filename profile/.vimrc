@@ -7,8 +7,8 @@ Plug 'natebosch/vim-lsc'	"locate server
 Plug 'natebosch/vim-lsc-dart' "dart server 
 Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
-"Plug 'tpope/vim-commentary'
-"Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Theme 
@@ -37,7 +37,7 @@ set nowritebackup
 " delays and poor user experience.
 set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+"set shortmess+=c
 
 " NERDTreed Config
 " Open a file and automatically close the explorer buffer
@@ -50,3 +50,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Plug vim-shmft config 
 " auto save while save
 let g:shfmt_fmt_on_save = 1
+
+" Fixed preview window no auto close
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
