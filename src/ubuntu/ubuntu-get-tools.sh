@@ -1,2 +1,2 @@
 #!/bin/bash
-apt-get install neovim -y
+apt-get install vim-python -y
