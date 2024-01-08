@@ -11,7 +11,8 @@ A shell script for quickly to config termux or linux.
 ### Install 
 
 ```
-curl -fsSL https://github.com/alanhee/helloworld/raw/main/hello.sh | bash 
+curl -fsSLO https://github.com/alanhee/helloworld/raw/main/hello.sh && bash hello.sh
+
 ```
 
 Have fun！
