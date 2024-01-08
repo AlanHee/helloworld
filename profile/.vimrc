@@ -9,6 +9,8 @@ Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
+Plug 'SirVer/Ultisnips' " art lang snippet
+Plug 'natebosch/dartlang-snippets'
 call plug#end()
 
 " Theme 
@@ -52,5 +54,9 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let g:shfmt_fmt_on_save = 1
 
 " Fixed preview window no auto close
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CompleteDone * silent! pclose
+
+" Auto format dart while save 
+autocmd BufWritePre *.dart* DartFmt
