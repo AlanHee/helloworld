@@ -38,8 +38,6 @@ set nowritebackup
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300
-" Don't pass messages to |ins-completion-menu|.
-"set shortmess+=c
 
 " NERDTreed Config
 " Open a file and automatically close the explorer buffer
@@ -54,8 +52,29 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let g:shfmt_fmt_on_save = 1
 
 " Fixed preview window no auto close
-"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+" autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Config lsc 
+" Use all the defaults (recommended):
+let g:lsc_auto_map = v:true
+" Complete default mappings are:
+let g:lsc_auto_map = {
+    \ 'GoToDefinition': '<C-]>',
+    \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
+    \ 'FindReferences': 'gr',
+    \ 'NextReference': '<C-n>',
+    \ 'PreviousReference': '<C-p>',
+    \ 'FindImplementations': 'gI',
+    \ 'FindCodeActions': 'ga',
+    \ 'Rename': 'gR',
+    \ 'ShowHover': v:true,
+    \ 'DocumentSymbol': 'go',
+    \ 'WorkspaceSymbol': 'gS',
+    \ 'SignatureHelp': 'gm',
+    \ 'Completion': 'completefunc',
+    \}
+" Fixed preview window no auto close
 autocmd CompleteDone * silent! pclose
 
 " Auto format dart while save 
