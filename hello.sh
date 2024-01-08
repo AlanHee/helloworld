@@ -1,7 +1,6 @@
 #!/bin/bash
 
 apt upgrade -qyy
-apt install git -qyy
 
 read -p 'Save script in:' home
 if [ -z ~/$home ]; then
@@ -12,6 +11,7 @@ if [ -e ~/$home ]; then
 	exit 0
 fi
 
+apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home
 echo 'Saved script.'
 
