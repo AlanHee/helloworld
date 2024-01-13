@@ -7,12 +7,11 @@ scripts=(
 	config-profile-settings
 	termux-config-remote-ip
 	config-git
-	config-neovim
+	config-vim
 	config-ssh-keygen
 	config-ssh-push-pub
-	get-vpn-client
+	get-openvpn-client
 	flutter-swith-host
-	termux-install-ubuntu
 )
 
 for script in ${scripts[@]}; do
