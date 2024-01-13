@@ -7,19 +7,19 @@ function _() {
 		remoteIP=$REMOTE_IP
 	else
 		while true; do
-			read -p "type in vpn server ip(default $remoteIP): " remote_ip
+			read -p "Type in openvpn server ip(default $remoteIP): " remote_ip
 			if [ ! -z $remote_ip ]; then
 				remoteIP=$remote_ip
-				break;
+				break
 			fi
 			if [ ! -z $remoteIP ]; then
-				break;
+				break
 			fi
 			echo 'ip can not be empty'
 		done
 	fi
-	scp root@$remoteIP:/root/vpnclient.sswan ~
-	echo 'Got vpn client'
+	scp root@$remoteIP:/root/client.ovpn ~
+	echo 'Got openvpn client'
 }
 
-yesOrNo "Get vpn client now (y/n): " _ 
+yesOrNo "Get openvpn client now (y/n): " _
