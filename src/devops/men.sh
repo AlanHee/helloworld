@@ -18,6 +18,7 @@ fb      Flutter build model to Json
 fba     Flutter build apk
 fbi     Flutter build ios
 e       Flutter open android emulator
+dbi     dart pub global activate --source path .
 EOF
 }
 
@@ -37,6 +38,7 @@ doAction() {
 	fcr) flutter clean && flutter run ;;
 	fu) flutter upgrade --force ;;
 	g | flutter) flutter pub get ;;
+	dbi) dart pub global activate --source path . ;;
 	quit | q) exit 0 ;;
 	h | help) showHelp ;;
 	esac
