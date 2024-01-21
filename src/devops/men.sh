@@ -19,6 +19,7 @@ fba     Flutter build apk
 fbi     Flutter build ios
 e       Flutter open android emulator
 dbi     dart pub global activate --source path .
+dpm     dart pub upgrade --major-versions
 EOF
 }
 
@@ -39,6 +40,7 @@ doAction() {
 	fu) flutter upgrade --force ;;
 	g | flutter) flutter pub get ;;
 	dbi) dart pub global activate --source path . ;;
+	dpm) dart pub upgrade --major-versions ;;
 	quit | q) exit 0 ;;
 	h | help) showHelp ;;
 	esac
