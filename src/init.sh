@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH=$PATH:~/$1/src:~/$1/src/termux:~/$1/src/ubuntu:~/$1/src/utils:~/$1/src/devops:~/$1/src/mac
+PATH=$PATH:~/$1/src:~/$1/src/termux:~/$1/src/ubuntu:~/$1/src/devops:~/$1/src/mac
 export PATH=$PATH
 export SRC=~/$1
 source funs.sh
@@ -9,9 +9,11 @@ saveExport SRC ~/$1
 saveSource alias.sh
 saveSource funs.sh
 
-echo ". ~/$1/config.sh" > ~/.bashrc
-if [ "$(uname -o)" = "Android" ]; then 
+echo ". ~/$1/config.sh" >~/.bashrc
+if [ "$(uname -o)" = "Android" ]; then
+	git clone git@github.com:alanhee/hello-termux.git $SRC/src/termux
 	hello-termux.sh
 else
+	git clone git@github.com:alanhee/hello-ubuntu.git $SRC/src/ubuntu
 	hello-ubuntu.sh
-fi	
+fi
