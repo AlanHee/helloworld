@@ -1,5 +1,5 @@
 config.sh
-src/ubuntu
-src/termux
-src/mac
-src/devops
+/src/ubuntu/
+/src/termux/
+/src/mac/
+/src/devops/
