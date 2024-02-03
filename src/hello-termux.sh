@@ -1,18 +1,18 @@
 #!/bin/bash
 scripts=(
 	termux-change-repo
-	termux-get-tools
+	termux-install-tools
 	termux-config-full-screen
 	termux-config-storage
 	config-user-name
 	config-user-email
-	termux-config-remote-ip
+	config-remote-ip
 	config-git
 	config-vim
 	config-ssh-keygen
 	config-ssh-push-pub
-	get-openvpn-client
-	flutter-swith-host
+	termux-install-ubuntu
+	termux-change-style
 )
 
 for script in ${scripts[@]}; do
