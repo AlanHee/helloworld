@@ -15,7 +15,7 @@ else
 fi
 
 function restoreVimrc() {
-	cd $SRC/profile
+	cd $SRC
 	cp -f .vimrc ~
 	vim +PlugClean[!] +PlugUpdate +qa
 }
