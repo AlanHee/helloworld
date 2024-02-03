@@ -11,6 +11,7 @@ scripts=(
 	config-vim
 	config-ssh-keygen
 	config-ssh-push-pub
+	get-more-scripts
 	termux-install-ubuntu
 	termux-change-style
 )
