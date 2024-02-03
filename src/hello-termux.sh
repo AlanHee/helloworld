@@ -4,7 +4,8 @@ scripts=(
 	termux-get-tools
 	termux-config-full-screen
 	termux-config-storage
-	config-profile-settings
+	config-user-name
+	config-user-email
 	termux-config-remote-ip
 	config-git
 	config-vim

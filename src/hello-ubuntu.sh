@@ -1,6 +1,7 @@
 #!/bin/bash
 scripts=(
-	config-profile-settings
+	config-user-name
+	config-user-email
 	ubuntu-get-openvpn
 )
 # scripts=(

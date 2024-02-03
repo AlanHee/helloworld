@@ -10,7 +10,6 @@ if [ -e ~/$home ]; then
 fi
 
 apt upgrade -qyy
-
 apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home
 echo 'Got script.'
