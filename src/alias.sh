@@ -3,6 +3,7 @@ alias vi='vim'
 alias lss='ls -tlh | less'
 alias gs='git status'
 alias sm='show-menu.sh | less'
+alias ss='show-status.sh'
 alias cs='connect-to-server.sh'
 
 #fixed scp error should no echo nothing
