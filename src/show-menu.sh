@@ -1,13 +1,17 @@
 #!/bin/bash
-#ls -Rm $SRCHOME | less
+cmds=($(find . -maxdepth 2 -type f -executable))
 
-cmd=()
-# determine env
-if [ "$(uname -o)" = "Android" ]; then
-	for i in $(ls $SRC/src/*); do
-		cmd[${#cmd[*]}]=$(basename $i)
-	done
-fi
-for item in ${cmd[*]}; do
-	echo $item
+echo "Script list:"
+for i in "${!cmds[@]}"; do
+	echo "[$((i + 1))] ${cmds[$i]}"
 done
+
+let size=${#cmds[@]}+1
+read -p "Choose in: " choice
+# check
+if ! [[ $choice -le $size ]]; then
+	echo "Plesae choose due in 1 to $size."
+	exit 1
+fi
+
+exec "${cmds[choice - 1]}"

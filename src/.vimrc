@@ -8,9 +8,9 @@ Plug 'natebosch/vim-lsc-dart' "dart server
 Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
-Plug 'SirVer/Ultisnips' " art lang snippet
-Plug 'natebosch/dartlang-snippets'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'SirVer/Ultisnips' 
+"Plug 'natebosch/dartlang-snippets'
 call plug#end()
 
 colorscheme neodark 
@@ -25,7 +25,7 @@ set showmatch
 set history=100
 syntax on
 set ignorecase
-set number
+"set number
 set cursorline
 set backspace=2 "Fixed mac delete btn no work
 set hidden
@@ -47,22 +47,7 @@ let g:shfmt_fmt_on_save = 1
 " Config lsc 
 " Use all the defaults (recommended):
 let g:lsc_auto_map = v:true
-" Complete default mappings are:
-let g:lsc_auto_map = {
-    \ 'GoToDefinition': '<C-]>',
-    \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
-    \ 'FindReferences': 'gr',
-    \ 'NextReference': '<C-n>',
-    \ 'PreviousReference': '<C-p>',
-    \ 'FindImplementations': 'gI',
-    \ 'FindCodeActions': 'ga',
-    \ 'Rename': 'gR',
-    \ 'ShowHover': v:true,
-    \ 'DocumentSymbol': 'go',
-    \ 'WorkspaceSymbol': 'gS',
-    \ 'SignatureHelp': 'gm',
-    \ 'Completion': 'completefunc',
-    \}
+
 " Fixed preview window no auto close
 autocmd CompleteDone * silent! pclose
 
