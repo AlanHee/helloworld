@@ -11,6 +11,7 @@ Plug 'tpope/vim-commentary'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'SirVer/Ultisnips' 
 "Plug 'natebosch/dartlang-snippets'
+Plug 'vim-airline/vim-airline'		
 call plug#end()
 
 colorscheme neodark 

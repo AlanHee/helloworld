@@ -6,7 +6,7 @@ for i in "${!cmds[@]}"; do
 	echo "[$((i + 1))] ${cmds[$i]}"
 done
 
-let size=${#cmds[@]}+1
+let size=${#cmds[@]}
 read -p "Choose in: " choice
 # check
 if ! [[ $choice -le $size ]]; then
