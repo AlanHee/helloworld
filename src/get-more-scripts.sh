@@ -1,18 +1,17 @@
 #!/bin/bash
 source funs.sh
 
-function getMacScripts() {
-	git clone git@github.com:alanhee/hello-mac.git $SRC/src/mac
-}
+list=(mac utils devops)
+for i in "${!list[@]}"; do
+	echo "[$((i + 1))] ${list[$i]}"
+done
 
-function getUtilScripts() {
-	git clone git@github.com:alanhee/hello-utils.git $SRC/src/utils
-}
+let size=${#list[@]}
+read -p "Choose in: " choice
+# check
+if ! [[ $choice -le $size ]]; then
+	echo "Plesae choose due in 1 to $size."
+	exit 1
+fi
 
-function getDevopsScripts() {
-	git clone git@github.com:alanhee/hello-devops.git $SRC/src/devops
-}
-
-yesOrNo "Get Devops scripts?(y/n):" getDevopsScripts
-yesOrNo "Get Mac scripts?(y/n):" getMacScripts
-yesOrNo "Get Utils scripts?(y/n):" getUtilScripts
+git clone git@github.com:alanhee/hello-devops.git $SRC/src/${list[choice - 1]}
