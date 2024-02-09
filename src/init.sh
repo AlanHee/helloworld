@@ -11,9 +11,9 @@ saveSource funs.sh
 
 echo ". ~/$1/config.sh" >~/.bashrc
 if [ "$(uname -o)" = "Android" ]; then
-	git clone git@github.com:alanhee/hello-termux.git $SRC/src/termux
+	git clone https://github.com/alanhee/hello-termux $SRC/src/termux
 	hello-termux.sh
 else
-	git clone git@github.com:alanhee/hello-ubuntu.git $SRC/src/ubuntu
+	git clone https://github.com/alanhee/hello-ubuntu $SRC/src/ubuntu
 	hello-ubuntu.sh
 fi

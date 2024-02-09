@@ -14,4 +14,4 @@ if ! [[ $choice -le $size ]]; then
 	exit 1
 fi
 
-git clone git@github.com:alanhee/hello-devops.git $SRC/src/${list[choice - 1]}
+git clone https://github.com/alanhee/hello-${list[choice - 1]} $SRC/src/${list[choice - 1]}
