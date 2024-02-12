@@ -74,5 +74,5 @@ function! ToggleHiddenAll()
 endfunction
 
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
-# Hiddden status now
+" Hiddden status now
 call ToggleHiddenAll()
