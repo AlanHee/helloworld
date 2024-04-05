@@ -2,7 +2,7 @@
 alias vi='vim'
 alias lss='ls -tlh | less'
 alias gs='git status'
-alias sm='show-menu.sh | less'
+alias sm='show-menu.sh'
 alias ss='show-status.sh'
 alias cs='connect-to-server.sh'
 alias gat="ga $(date)"
