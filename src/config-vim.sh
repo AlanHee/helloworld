@@ -15,8 +15,7 @@ else
 fi
 
 function restoreVimrc() {
-	cd $SRC
-	cp -f .vimrc ~
+	cp -f $SRC/src/.vimrc ~
 	vim +PlugClean[!] +PlugUpdate +qa
 }
 
