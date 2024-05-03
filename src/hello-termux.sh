@@ -12,7 +12,6 @@ scripts=(
 	config-ssh-keygen
 	config-ssh-push-pub
 	config-more-scripts
-	get-openvpn-client
 	termux-change-style
 )
 
