@@ -1,7 +1,7 @@
 #!/bin/bash
 
 read -p 'Let script in:(default: bin)' home
-if [ -z ~/$home ]; then
+if [ -z $home ]; then
 	$home="bin"
 fi
 if [ -e ~/$home ]; then
