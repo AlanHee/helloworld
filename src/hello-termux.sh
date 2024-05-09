@@ -2,16 +2,16 @@
 scripts=(
 	termux-change-repo
 	termux-install-tools
-	termux-config-full-screen
-	termux-config-storage
-	config-user-name
-	config-user-email
-	config-remote-ip
-	config-git
-	config-vim
-	config-ssh-keygen
-	config-ssh-push-pub
-	config-more-scripts
+	termux-set-full-screen
+	termux-set-storage
+	set-user-name
+	set-user-email
+	set-remote-ip
+	set-git
+	set-vim
+	set-ssh-keygen
+	set-ssh-push-pub
+	set-more-scripts
 	termux-change-style
 )
 

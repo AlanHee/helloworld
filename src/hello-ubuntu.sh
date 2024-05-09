@@ -1,15 +1,15 @@
 #!/bin/bash
 scripts=(
-	config-user-name
-	config-user-email
-	config-ssh-keygen
-	config-git
-	config-vim
-	ubuntu-get-openvpn
-	ubuntu-get-dart
-	ubuntu-get-dart-frog
-	ubuntu-get-flutter
-	ubuntu-get-docker
+	set-user-name
+	set-user-email
+	set-ssh-keygen
+	set-git
+	set-vim
+	ubuntu-openvpn-get
+	ubuntu-dart-get
+	ubuntu-dart-frog-get
+	ubuntu-flutter-get
+	ubuntu-docker-get
 )
 
 for script in ${scripts[@]}; do
