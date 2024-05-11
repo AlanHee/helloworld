@@ -6,7 +6,7 @@ export SRC=~/$1
 source funs.sh
 saveExport PATH $PATH
 saveExport SRC ~/$1
-saveSource config-alias.sh
+saveSource alias.sh
 saveSource funs.sh
 
 echo ". ~/$1/config.sh" >~/.bashrc
