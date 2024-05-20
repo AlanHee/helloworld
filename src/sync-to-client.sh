@@ -11,4 +11,4 @@
 #rsync --dry-run
 
 #apt install rsync -y
-rsync -av --progress --delete /data/data/com.termux/files/home/$1/ root@$REMOTE_IP:$1/ --exclude ".dart_frog/" --exclude ".dart_tool/" --exclude "pubspec.lock"
+rsync -av --progress --delete root@$REMOTE_IP:/root/todos/ ~/todos/ --exclude ".dart_frog/" --exclude ".dart_tool/" --exclude "pubspec.lock"

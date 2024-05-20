@@ -9,6 +9,7 @@ if [ -e ~/$home ]; then
 	exit 0
 fi
 
+termux-setup-storage
 apt upgrade -qyy
 apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home

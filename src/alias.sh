@@ -4,6 +4,7 @@ alias lss='ls -tlh | less'
 alias gs='git status'
 alias sm='show-menu.sh'
 alias ss='show-status.sh'
+alias sf='show-funs.sh'
 alias cs='connect-to-server.sh'
 alias ss='sync-to-server.sh'
 alias gat="ga $(date)"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # list
 echo "Fun list:"
-cmds=(cmatrix neofetch tldr figlet toilet)
+cmds=(cmatrix sl fortune neofetch tldr figlet toilet)
 for i in "${!cmds[@]}"; do
 	echo "$((i + 1)). ${cmds[$i]}"
 done
