@@ -10,7 +10,7 @@ if [ -e ~/$home ]; then
 fi
 
 if [ "$(uname -o)" = "Android" ]; then
-	termux-setup-storage
+	termux-change-repo
 else
 
 apt upgrade -qyy
@@ -18,4 +18,4 @@ apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home
 echo 'Got script.'
 
-bash ~/$home/src/init.sh $home
+bash ~/$home/src/hello.sh $home
