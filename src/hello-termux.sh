@@ -1,6 +1,5 @@
 #!/bin/bash
 scripts=(
-	termux-change-repo
 	termux-install-tools
 	termux-set-full-screen
 	termux-set-storage

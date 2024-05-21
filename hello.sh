@@ -9,7 +9,10 @@ if [ -e ~/$home ]; then
 	exit 0
 fi
 
-termux-setup-storage
+if [ "$(uname -o)" = "Android" ]; then
+	termux-setup-storage
+else
+
 apt upgrade -qyy
 apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home
