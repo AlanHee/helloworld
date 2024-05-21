@@ -3,8 +3,8 @@ scripts=(
 	termux-install-tools
 	termux-set-full-screen
 	termux-set-storage
-	set-user-name
-	set-user-email
+	set-your-name
+	set-your-email
 	set-remote-ip
 	set-git
 	set-vim

@@ -1,7 +1,7 @@
 #!/bin/bash
 scripts=(
-	set-user-name
-	set-user-email
+	set-your-name
+	set-your-email
 	set-ssh-keygen
 	set-git
 	set-vim
