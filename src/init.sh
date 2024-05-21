@@ -9,7 +9,7 @@ saveExport SRC ~/$1
 saveSource alias.sh
 saveSource funs.sh
 
-echo ". ~/$1/config.sh" >~/.bashrc
+echo ". ~/$1/config.sh" >>~/.bashrc
 if [ "$(uname -o)" = "Android" ]; then
 	git clone https://github.com/alanhee/hello-termux $SRC/src/termux
 	hello-termux.sh
