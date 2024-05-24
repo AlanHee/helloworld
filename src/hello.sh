@@ -6,6 +6,8 @@ export SRC=~/$1
 source funs.sh
 saveExport PATH $PATH
 saveExport SRC ~/$1
+#makesure vim as crontab -e default editor
+saveExport EDITOR vim
 saveSource alias.sh
 saveSource funs.sh
 
