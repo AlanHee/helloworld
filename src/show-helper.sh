@@ -8,7 +8,7 @@
 
 # list
 echo "Fun list:"
-cmds=(fzf bat xh)
+cmds=(fzf bat xh yazi)
 for i in "${!cmds[@]}"; do
 	echo "$((i + 1)). ${cmds[$i]}"
 done
@@ -29,12 +29,4 @@ if ! type $cmd &>/dev/null; then
 	apt install -qyy $cmd
 fi
 
-if [[ $cmd == "figlet" || $cmd == "toilet" ]]; then
-	read -p "type word to show:" word
-	exec $cmd $word
-elif [[ $cmd == "tldr" ]]; then
-	read -p "type cmd to example:" input_cmd
-	exec $cmd $input_cmd
-else
-	exec $cmd
-fi
+exec $cmd

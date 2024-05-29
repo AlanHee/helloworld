@@ -10,6 +10,7 @@ alias ss='sync-to-server.sh my_app'
 alias gat="ga $(date)"
 alias pub="dart pub"
 alias en="edit-network-file.sh"
+alias m="men.sh"
 
 #fixed scp error should no echo nothing
 #scp: Received message too long 1819238756
