@@ -1,7 +1,7 @@
 #!/bin/bash
 source funs.sh
 
-list=(mac utils devops ubuntu)
+list=(mac utils devops ubuntu cookbook)
 for i in "${!list[@]}"; do
 	echo "[$((i + 1))] ${list[$i]}"
 done

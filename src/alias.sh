@@ -5,6 +5,7 @@ alias gs='git status'
 alias sm='show-menu.sh'
 alias ss='show-status.sh'
 alias sf='show-funs.sh'
+alias sc='show-cookbook.sh'
 alias cs='connect-to-server.sh'
 alias ss='sync-to-server.sh my_app'
 alias gat="ga $(date)"
