@@ -5,6 +5,8 @@ scripts=(
 	set-ssh-keygen
 	set-git
 	set-vim
+	ubuntu-dart-get
+	ubuntu-dart-frog-get
 	ubuntu-openvpn-get
 )
 
