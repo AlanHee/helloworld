@@ -11,5 +11,6 @@ scripts=(
 )
 
 for script in ${scripts[@]}; do
+	echo "Runing $script.sh ..."
 	bash $script.sh
 done
