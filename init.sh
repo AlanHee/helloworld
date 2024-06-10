@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p 'Let script in:(default: bin)' home
+read -p 'Get shell scripts in path(default as ~/bin): ' home
 if [ -z $home ]; then
-	$home="bin"
+	home="bin"
 fi
 if [ -e ~/$home ]; then
 	echo "Oop, path existed."
@@ -16,6 +16,6 @@ else
 apt upgrade -qyy
 apt install git -qyy
 git clone https://github.com/alanhee/helloworld ~/$home
-echo 'Got script.'
+echo "Got shell scripts in: ~/$home"
 
 bash ~/$home/src/hello.sh $home
