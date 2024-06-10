@@ -6,10 +6,6 @@ scripts=(
 	set-git
 	set-vim
 	ubuntu-openvpn-get
-	ubuntu-dart-get
-	ubuntu-dart-frog-get
-	ubuntu-flutter-get
-	ubuntu-docker-get
 )
 
 for script in ${scripts[@]}; do
