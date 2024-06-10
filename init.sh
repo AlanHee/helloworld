@@ -9,9 +9,9 @@ if [ -e ~/$home ]; then
 	exit 0
 fi
 
-if [ "$(uname -o)" = "Android" ]; then
+if [ "$(uname -o)" == "Android" ]; then
 	termux-change-repo
-else
+fi
 
 apt upgrade -qyy
 apt install git -qyy
