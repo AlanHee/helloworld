@@ -25,7 +25,7 @@ set incsearch
 set showmatch 
 set history=100
 syntax on
-set ignorecase
+set noignorecase
 "set number
 set cursorline
 set backspace=2 "Fixed mac delete btn no work
