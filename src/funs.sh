@@ -42,13 +42,6 @@ function saveSource() {
 	source $1
 }
 
-function ga() {
-	git gc
-	git pull
-	git add .
-	git commit -m "$1"
-	git push
-}
 
 function yesOrNo() {
 	while true; do
