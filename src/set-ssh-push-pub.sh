@@ -3,8 +3,15 @@ source funs.sh
 source ~/.bashrc
 
 remoteIP=""
+remotePort=""
+
 if [ ! -z $REMOTE_IP ]; then
 	remoteIP=$REMOTE_IP
+fi
+if [ ! -z $1 ]; then
+	remotePort=$1
+else
+	remotePort=22
 fi
 
 function _() {
@@ -21,7 +28,7 @@ function _() {
 		echo 'IP address can not be empty, try it again.'
 	done
 
-	ssh root@$remoteIP "cat >> ~/.ssh/authorized_keys" <~/.ssh/id_rsa.pub
+	ssh root@$remoteIP -p $remotePort  "cat >> ~/.ssh/authorized_keys" <~/.ssh/id_rsa.pub
 	echo "Pushed ssh public key to server."
 }
 
