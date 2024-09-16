@@ -1,8 +1,8 @@
 #!/bin/bash
 scripts=(
-	set-your-name
-	set-your-email
-	set-ssh-keygen
+	set-config-name
+	set-config-email
+	ssh-keygen
 	set-git
 	set-vim
 	ubuntu-dart-get
