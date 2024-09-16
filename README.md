@@ -1,6 +1,6 @@
 # helloworld
 
-A shell script for quickly to config termux or linux.
+A shell suit script for run termux and ubuntu system quickly.
 
 ### Why 
 
