@@ -10,6 +10,8 @@ if [ ! -z $REMOTE_IP ]; then
 fi
 if [ ! -z $1 ]; then
 	remotePort=$1
+elif [ ! -z $REMOTE_SSH_PORT ]; then
+	remotePort=$REMOTE_SSH_PORT
 else
 	remotePort=22
 fi
@@ -20,15 +22,15 @@ function _() {
 		read -p "Type in remote ip (default $remoteIP) : " ssh_ip
 		if [ ! -z $ssh_ip ]; then
 			remoteIP=$ssh_ip
-			break;
+			break
 		fi
 		if [ ! -z $remoteIP ]; then
-			break;
+			break
 		fi
 		echo 'IP address can not be empty, try it again.'
 	done
 
-	ssh root@$remoteIP -p $remotePort  "cat >> ~/.ssh/authorized_keys" <~/.ssh/id_rsa.pub
+	ssh root@$remoteIP -p $remotePort "cat >> ~/.ssh/authorized_keys" <~/.ssh/id_rsa.pub
 	echo "Pushed ssh public key to server."
 }
 
