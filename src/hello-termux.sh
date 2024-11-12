@@ -3,14 +3,12 @@ scripts=(
 	termux-install-tools
 	termux-set-full-screen
 	termux-set-storage
-	set-config-name
-	set-config-email
-	set-config-remote-ip
-	set-config-remote-port
+	set-config
 	set-git
 	set-vim
-	ssh-keygen
-	ssh-push-pub
+	set-ssh
+	set-ssh-keygen
+	set-ssh-push-pub
 	get-more-scripts
 	termux-change-style
 )
