@@ -6,6 +6,7 @@ scripts=(
 	set-config-name
 	set-config-email
 	set-config-remote-ip
+	set-config-remote-port
 	set-git
 	set-vim
 	ssh-keygen
