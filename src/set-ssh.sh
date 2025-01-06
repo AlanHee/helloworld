@@ -26,4 +26,4 @@ if [ ! -z $remote_port ]; then
 fi
 
 saveExport REMOTE_SSH_PORT $remotePort
-echo "SSH Port($remotePort) setup"
+echo "Setup remote ssh port: $remotePort."
