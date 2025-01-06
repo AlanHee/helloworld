@@ -26,5 +26,4 @@ if [ ! -z $user_email ]; then
 fi
 
 saveExport USER_EMAIL $email
-echo "User email( $email ) setup"
 echo "Setup user mail: $email"
