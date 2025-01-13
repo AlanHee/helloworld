@@ -26,7 +26,8 @@ set showmatch
 set history=100
 syntax on
 set noignorecase
-"set number
+" set nu 					"set number line
+set nonu				  "set no number line
 set cursorline
 set backspace=2 "Fixed mac delete btn no work
 set hidden
@@ -34,6 +35,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 set updatetime=300 " delays and poor user experience.
+" set relativenumber
+" set norelativenumber
 
 " NERDTreed Config
 let NERDTreeQuitOnOpen=1
