@@ -14,7 +14,7 @@ if [ ! -z $remote_ip ]; then
 fi
 
 saveExport REMOTE_IP $remoteIP
-echo "SSH IP($remoteIP) setup"
+echo "SSH IP:$remoteIP"
 
 if [ ! -z $REMOTE_SSH_PORT ]; then
 	remotePort=$REMOTE_SSH_PORT
@@ -26,4 +26,5 @@ if [ ! -z $remote_port ]; then
 fi
 
 saveExport REMOTE_SSH_PORT $remotePort
-echo "Setup remote ssh port: $remotePort."
+echo "SSH port:$remotePort"
+echo "SSH setup"

@@ -13,9 +13,6 @@ if [ ! -z $user_name ]; then
 	name="$user_name"
 fi
 
-saveExport USER_NAME $name
-echo "Setup user name: $name"
-
 if [ ! -z $USER_EMAIL ]; then
 	email=$USER_EMAIL
 fi
@@ -25,5 +22,8 @@ if [ ! -z $user_email ]; then
 	email="$user_email"
 fi
 
+saveExport USER_NAME $name
 saveExport USER_EMAIL $email
-echo "Setup user mail: $email"
+echo "Your name: $name"
+echo "Your email: $email"
+echo "Config setup"
