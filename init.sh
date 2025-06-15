@@ -15,7 +15,7 @@ fi
 
 apt upgrade -qy
 apt install git -qy
-if git clone -progress https://github.com/alanhee/helloworld ~/$home; then
+if git clone --progress https://github.com/alanhee/helloworld ~/$home; then
 	echo "Cloned success in: ~/$home"
 else
 	echo 'Cloned failed. Check your network.'
