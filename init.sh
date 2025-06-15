@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p 'Get shell scripts in path(default as ~/bin): ' home
+read -p 'Get shell script in path(default as ~/bin): ' home
 if [ -z $home ]; then
 	home="bin"
 fi
@@ -13,9 +13,12 @@ if [ "$(uname -o)" == "Android" ]; then
 	termux-change-repo
 fi
 
-apt upgrade -qyy
-apt install git -qyy
-git clone https://github.com/alanhee/helloworld ~/$home
-echo "Got shell scripts in: ~/$home"
+apt upgrade -qy
+apt install git -qy
+if git clone -progress https://github.com/alanhee/helloworld ~/$home; then
+	echo "Cloned success in: ~/$home"
+else
+	echo 'Cloned failed. Check your network.'
+fi
 
 bash ~/$home/src/hello.sh $home
