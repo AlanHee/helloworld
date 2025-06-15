@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs' 
-"Plug 'ervandew/supertab'  
-Plug 'scrooloose/nerdtree' "file navigater
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } "file navigator
 Plug 'dart-lang/dart-vim-plugin' "dart lang color
 Plug 'natebosch/vim-lsc'	"locate server
 Plug 'natebosch/vim-lsc-dart' "dart server 
