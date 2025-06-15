@@ -7,6 +7,8 @@ Plug 'natebosch/vim-lsc-dart' "dart server
 Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'SirVer/Ultisnips' 
 "Plug 'natebosch/dartlang-snippets'
@@ -50,6 +52,10 @@ let g:shfmt_fmt_on_save = 1
 " Config lsc 
 " Use all the defaults (recommended):
 let g:lsc_auto_map = v:true
+
+" Config fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <C-g> :Rg<CR>
 
 " Fixed preview window no auto close
 autocmd CompleteDone * silent! pclose
