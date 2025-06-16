@@ -1,9 +1,7 @@
 #!/bin/bash
 
-read -p 'Save script in (default ~/bin): ' home
-if [ -z $home ]; then
-	home="bin"
-fi
+home="bin"
+read -p 'Save script in (default ~/bin): ' $home
 if [ -e ~/$home ]; then
 	echo "Oop, path existed."
 	exit 1
@@ -20,7 +18,7 @@ if git clone --progress https://github.com/alanhee/helloworld ~/$home; then
 	echo "Cloned success in: ~/$home"
 else
 	echo 'Cloned failed. Check your network.'
- exit 1
+	exit 1
 fi
 
 bash ~/$home/src/hello.sh $home

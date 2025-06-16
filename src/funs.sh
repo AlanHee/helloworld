@@ -1,6 +1,4 @@
 function saveExport() {
-	# Create config file weather no exist yet
-	touch $SRC/config.sh
 	# Update export
 	if grep -q "export $1=" $SRC/config.sh; then
 		# Fixed error: ...unknown option to `s’
@@ -12,8 +10,6 @@ function saveExport() {
 }
 
 function saveConst() {
-	# Create config file weather no exist yet
-	touch $SRC/config.sh
 	# Update const
 	if grep -q "$1=" $SRC/config.sh; then
 		sed -i "s/^$1=.*/$1=$2/" $SRC/config.sh
@@ -24,8 +20,6 @@ function saveConst() {
 }
 
 function saveSource() {
-	# Create config file weather no exist yet
-	touch $SRC/config.sh
 	# Update
 	if grep -q "source $1" $SRC/config.sh; then
 		sed -i "s/^source $1.*/source $1/" $SRC/config.sh
