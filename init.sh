@@ -1,7 +1,10 @@
 #!/bin/bash
 
 home="bin"
-read -p 'Save script in (default ~/bin): ' $home
+read -p 'Save script in (default ~/bin): ' input
+if [ ! -z $input ]; then
+   home=$input
+fi
 if [ -e ~/$home ]; then
 	echo "Oop, path existed."
 	exit 1
