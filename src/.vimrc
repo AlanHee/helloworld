@@ -51,23 +51,7 @@ let g:shfmt_fmt_on_save = 1
 
 " Config lsc 
 " Use all the defaults (recommended):
-" let g:lsc_auto_map = v:true
-let g:lsc_auto_map = {
-    \ 'GoToDefinition': '<C-]>',
-    \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
-    \ 'FindReferences': 'gr',
-    \ 'NextReference': '<C-n>',
-    \ 'PreviousReference': '<C-p>',
-    'PreviousReference': 'gp',
-    \ 'FindImplementations': 'gI',
-    \ 'FindCodeActions': 'ga',
-    \ 'Rename': 'gR',
-    \ 'ShowHover': v:true,
-    \ 'DocumentSymbol': 'go',
-    \ 'WorkspaceSymbol': 'gS',
-    \ 'SignatureHelp': 'gm',
-    \ 'Completion': 'completefunc',
-    \}
+let g:lsc_auto_map = v:true
 
 " Config fzf
 nnoremap <C-p> :Files<CR>
