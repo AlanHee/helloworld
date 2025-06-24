@@ -8,6 +8,8 @@ Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'neoclide/coc.nvim', {'do': ':UpdateRemotePlugins'}
+"CocInstall coc-rust-analyzer
 Plug 'junegunn/fzf.vim'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'SirVer/Ultisnips' 
@@ -50,12 +52,33 @@ nnoremap <C-f> :NERDTreeFind<CR>
 let g:shfmt_fmt_on_save = 1
 
 " Config lsc 
+" let g:lsc_auto_map = v:true
 " Use all the defaults (recommended):
-let g:lsc_auto_map = v:true
+let g:lsc_auto_map = {
+     \ 'GoToDefinition': '<C-]>',
+		 \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
+		 \ 'FindReferences': 'gr',
+		 \ 'NextReference': '<C-n>',
+		 \ 'PreviousReference': 'gp',
+		 \ 'FindImplementations': 'gI',
+		 \ 'FindCodeActions': 'ga',
+		 \ 'Rename': 'gR',
+		 \ 'ShowHover': v:true,
+		 \ 'DocumentSymbol': 'go',
+		 \ 'WorkspaceSymbol': 'gS',
+		 \ 'SignatureHelp': 'gm',
+		 \ 'Completion': 'completefunc',
+		 \}
 
 " Config fzf
 nnoremap <C-p> :Files<CR>
 nnoremap <C-g> :Rg<CR>
+
+" Config rust
+let g:rustfmt_autosave = 1
+let g:rust_check_on_save = 1
+let g:ale_linters = {'rust': ['analyzer', 'clippy']}
+let g:ale_fixers = {'rust': ['rustfmt', 'clippy']}
 
 " Fixed preview window no auto close
 autocmd CompleteDone * silent! pclose
