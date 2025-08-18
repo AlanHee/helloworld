@@ -6,7 +6,7 @@ scripts=(
 	set-vim
 	ubuntu-dart-get
 	ubuntu-dart-frog-get
-	ubuntu-openvpn-get
+	ubuntu-server-openvpn
 )
 
 for script in ${scripts[@]}; do
