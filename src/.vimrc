@@ -7,10 +7,10 @@ Plug 'natebosch/vim-lsc-dart' "dart server
 Plug 'KeitaNakamura/neodark.vim' "Theme
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'neoclide/coc.nvim', {'do': ':UpdateRemotePlugins'}
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'neoclide/coc.nvim', {'do': ':UpdateRemotePlugins'}
 "CocInstall coc-rust-analyzer
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf.vim'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'SirVer/Ultisnips' 
 "Plug 'natebosch/dartlang-snippets'
