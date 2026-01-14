@@ -1,9 +1,12 @@
 #!/bin/bash
 scripts=(
-	set-config
-	set-ssh-keygen
-	set-git
-	set-vim
+	config-set-profile
+	config-set-git
+	config-set-vim
+	config-set-ssh
+	config-gen-sshkeys
+	config-push-pubkey
+	config-get-scripts
 	ubuntu-dart-get
 	ubuntu-dart-frog-get
 	ubuntu-server-openvpn

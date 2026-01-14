@@ -3,13 +3,13 @@ scripts=(
 	termux-get-tools
 	termux-set-full-screen
 	termux-set-storage
-	set-config
-	set-git
-	set-vim
-	set-ssh
-	set-ssh-keygen
-	set-ssh-push-pub
-	get-more-scripts
+	config-set-profile
+	config-set-git
+	config-set-vim
+	config-set-ssh
+	config-gen-sshkeys
+	config-push-pubkey
+	config-get-scripts
 	termux-change-style
 )
 
