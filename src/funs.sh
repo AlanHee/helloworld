@@ -48,3 +48,6 @@ function yesOrNo() {
 		esac
 	done
 }
+
+note() { echo "$(date): $*" >>~/notes.txt; }
+viewnotes() { cat ~/notes.txt; }
